@@ -4,14 +4,19 @@ $cd-couleur_note:#fcdfdb;
 $cd-couleur_chic:#fff5fe;
 $cd-couleur_delice:#f9f9f9;
 $cd-couleur_palette: #fdfffd;
+$cd-couleur_txt_note: #3c1218;
+$cd-couleur_txt_chic: #c77412;
+$cd-couleur_txt_delice: #0887fb;
+$cd-couleur_txt_palette: #72bf56;
 
 @mixin cadres-menus {
     height: 50rem;
     width: 40rem;
     margin: 5rem;
-    box-shadow:1px 1px 19px 2px #a69fa6;
-    border-radius:0.5rem;
-    }
+    box-shadow: 1px 1px 19px 2px #a69fa6;
+    border-radius: 0.5rem;
+    padding-top: 10rem;
+}
 html {
     font-size: 62.5%;
 }
@@ -21,41 +26,71 @@ body{
 .menus {
     display: flex;
     justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+
+
 
     &__chic {
         @include cadres-menus;
-        background-color:$cd-couleur_chic;
+        background-color: $cd-couleur_chic;
+        color: $cd-couleur_txt_chic;
+
+        & a {
+            color: $cd-couleur_txt_chic;
+        }
     }
 
     &__palette {
         @include cadres-menus;
-        background-color:$cd-couleur_palette;
+        background-color: $cd-couleur_palette;
+        color: $cd-couleur_txt_palette;
+
+        & a {
+            color: $cd-couleur_txt_palette;
+        }
     }
 
     &__delice {
         @include cadres-menus;
-        background-color:$cd-couleur_delice;
+        background-color: $cd-couleur_delice;
+        color: $cd-couleur_txt_delice;
+
+        & a {
+            color: $cd-couleur_txt_delice;
+        }
     }
 
     &__note {
+        background-color: $cd-couleur_note;
         @include cadres-menus;
-        background-color:$cd-couleur_note;
+        color: $cd-couleur_txt_note;
+
+        & a {
+            color: $cd-couleur_txt_note;
+        }
+        & i{
+            color:darkorange;
+        }
+    }
+
+    & a {
+        text-decoration: none;
     }
 }
 
-#basdepage, header, #basdepage a {
+#basdepage,  #basdepage a {
     display:flex;
     background-color: $cd-vert;
     color: $cd-jaune;
     font-size: 2.5rem;
-    justify-content: space-around;
-    padding-top:2rem;
-    padding-bottom:2rem;
+    justify-content: space-between;
+    padding:2rem;
     text-decoration:none;
     }
 #prochainement {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     margin-left: 50rem;
     margin-right: 50rem;
     width: 25rem;
@@ -65,10 +100,19 @@ body{
     display: flex;
     justify-content: space-around;
     border-radius: 1rem;
-    padding:2rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
 }
 h1 {
+    font-size: 7rem;
+    text-align:center;
+}
+ header
+ {
+    background-color: $cd-vert;
+    color: $cd-jaune;
     padding: 3rem;
-    font-size: 4rem;
-    text-align: center
+    
 }
