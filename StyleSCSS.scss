@@ -1,0 +1,20 @@
+﻿$cd-vert: #579c87;
+$cd-jaune:#fdcb46;
+html {
+    font-size: 62.5%;
+}
+
+.menus{
+    display:flex;
+    &__chic, &__palette, &__delice, &__note{
+        border:1rem solid black;
+        height:30rem;
+        margin:3rem;
+        }
+}
+
+footer, header {
+    display: flex;
+    background-color:$cd-vert;
+    color:$cd-jaune;
+}
