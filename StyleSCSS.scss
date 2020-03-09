@@ -1,20 +1,74 @@
-﻿$cd-vert: #579c87;
+﻿$cd-vert:#579c87;
 $cd-jaune:#fdcb46;
+$cd-couleur_note:#fcdfdb;
+$cd-couleur_chic:#fff5fe;
+$cd-couleur_delice:#f9f9f9;
+$cd-couleur_palette: #fdfffd;
+
+@mixin cadres-menus {
+    height: 50rem;
+    width: 40rem;
+    margin: 5rem;
+    box-shadow:1px 1px 19px 2px #a69fa6;
+    border-radius:0.5rem;
+    }
 html {
     font-size: 62.5%;
 }
+body{
+    margin:0;
+}
+.menus {
+    display: flex;
+    justify-content: center;
 
-.menus{
-    display:flex;
-    &__chic, &__palette, &__delice, &__note{
-        border:1rem solid black;
-        height:30rem;
-        margin:3rem;
-        }
+    &__chic {
+        @include cadres-menus;
+        background-color:$cd-couleur_chic;
+    }
+
+    &__palette {
+        @include cadres-menus;
+        background-color:$cd-couleur_palette;
+    }
+
+    &__delice {
+        @include cadres-menus;
+        background-color:$cd-couleur_delice;
+    }
+
+    &__note {
+        @include cadres-menus;
+        background-color:$cd-couleur_note;
+    }
 }
 
-footer, header {
+#basdepage, header, #basdepage a {
+    display:flex;
+    background-color: $cd-vert;
+    color: $cd-jaune;
+    font-size: 2.5rem;
+    justify-content: space-around;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    text-decoration:none;
+    }
+#prochainement {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 50rem;
+    margin-right: 50rem;
+    width: 25rem;
+    background-color: $cd-vert;
+    color: $cd-jaune;
+    font-size: 3rem;
     display: flex;
-    background-color:$cd-vert;
-    color:$cd-jaune;
+    justify-content: space-around;
+    border-radius: 1rem;
+    padding:2rem;
+}
+h1 {
+    padding: 3rem;
+    font-size: 4rem;
+    text-align: center
 }
