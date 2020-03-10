@@ -8,27 +8,18 @@ $cd-couleur_txt_note: #3c1218;
 $cd-couleur_txt_chic: #c77412;
 $cd-couleur_txt_delice: #0887fb;
 $cd-couleur_txt_palette: #72bf56;
-
-@mixin cadre-img {
-    height: 50rem;
-    width: 40rem;
-    box-shadow: 1px 1px 19px 2px #a69fa6;
-    border-radius: 0.5rem;
-    margin-top:5rem;
-    margin-right:2.5rem;
-    margin-left:2.5rem;
+.logo{
+    padding-top:5rem;
+    padding-bottom:3rem;
 }
-.corps img{
-    @include cadre-img;
-}
-/*@mixin cadres-menus {
+@mixin cadres-menus {
     height: 40rem;
     width: 40rem;
     margin: 5rem;
     box-shadow: 1px 1px 19px 2px #a69fa6;
     border-radius: 0.5rem;
     padding-top: 15rem;
-}*/
+}
 html {
     font-size: 62.5%;
     height: 100%;
@@ -44,13 +35,22 @@ body{
     justify-content: center;
     font-size: 3rem;
     text-align: center;
+    & a{
+        font-size:5rem;
+    }
 
 
-    /*
+
     &__chic {
         @include cadres-menus;
         background-color: $cd-couleur_chic;
         color: $cd-couleur_txt_chic;
+
+        & h1 {
+            font-family: 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif,;
+            font-style: oblique;
+            font-size: 3rem;
+        }
 
         & a {
             color: $cd-couleur_txt_chic;
@@ -62,6 +62,12 @@ body{
         background-color: $cd-couleur_palette;
         color: $cd-couleur_txt_palette;
 
+        & h1 {
+            font-family: 'tex_gyre_pagellabold_italic', 'Bell MT, 'Georgia,'Comic Sans MS';
+            font-style: italic;
+            font-size: 4rem;
+        }
+
         & a {
             color: $cd-couleur_txt_palette;
         }
@@ -72,6 +78,11 @@ body{
         background-color: $cd-couleur_delice;
         color: $cd-couleur_txt_delice;
 
+        & h1 {
+            font-family: 'Edwardian Script ITC','Elephant','EmojiOne Color', Georgia Pro,;
+            font-style: italic;
+        }
+
         & a {
             color: $cd-couleur_txt_delice;
         }
@@ -81,18 +92,26 @@ body{
         background-color: $cd-couleur_note;
         @include cadres-menus;
         color: $cd-couleur_txt_note;
+        font-size: 3rem;
+
+        & h1 {
+            font-family: 'calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
+            margin-top: 0;
+            font-size: 3rem;
+        }
 
         & a {
             color: $cd-couleur_txt_note;
         }
-        & i{
-            color:darkorange;
+
+        & i {
+            color: darkorange;
         }
     }
 
     & a {
         text-decoration: none;
-    }*/
+    }
 }
 
 #basdepage, #basdepage a {
@@ -125,19 +144,55 @@ body{
     justify-content: center;
 }
 h1 {
-    font-size: 7rem;
+    font-size: 5rem;
     text-align:center;
+
 }
  header
  {
     background-color: $cd-vert;
     color: $cd-jaune;
-    padding: 2.5rem;
     text-align:center;
-    width:100%;
   }
  .menu-grand{
      text-align:center;
      margin:6rem;
  }
- 
+footer{
+   
+position: fixed;
+bottom: 0px;
+width: 100%;
+}
+
+@font-face {
+    font-family: 'calligraffitiregular';
+    src: url('Calligraffiti-webfont.eot');
+    src: url('Calligraffiti-webfont.eot?#iefix') format('embedded-opentype'), url('Calligraffiti-webfont.woff2') format('woff2'), url('Calligraffiti-webfont.woff') format('woff'), url('Calligraffiti-webfont.ttf') format('truetype'), url('Calligraffiti-webfont.svg#calligraffitiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tex_gyre_pagellabold';
+    src: url('texgyrepagella-bold-webfont.eot');
+    src: url('texgyrepagella-bold-webfont.eot?#iefix') format('embedded-opentype'), url('texgyrepagella-bold-webfont.woff2') format('woff2'), url('texgyrepagella-bold-webfont.woff') format('woff'), url('texgyrepagella-bold-webfont.ttf') format('truetype'), url('texgyrepagella-bold-webfont.svg#tex_gyre_pagellabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tex_gyre_pagellaitalic';
+    src: url('texgyrepagella-italic-webfont.eot');
+    src: url('texgyrepagella-italic-webfont.eot?#iefix') format('embedded-opentype'), url('texgyrepagella-italic-webfont.woff2') format('woff2'), url('texgyrepagella-italic-webfont.woff') format('woff'), url('texgyrepagella-italic-webfont.ttf') format('truetype'), url('texgyrepagella-italic-webfont.svg#tex_gyre_pagellaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tex_gyre_pagellaregular';
+    src: url('texgyrepagella-regular-webfont.eot');
+    src: url('texgyrepagella-regular-webfont.eot?#iefix') format('embedded-opentype'), url('texgyrepagella-regular-webfont.woff2') format('woff2'), url('texgyrepagella-regular-webfont.woff') format('woff'), url('texgyrepagella-regular-webfont.ttf') format('truetype'), url('texgyrepagella-regular-webfont.svg#tex_gyre_pagellaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
