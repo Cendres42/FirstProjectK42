@@ -6,7 +6,7 @@ $cd-couleur_delice:#f9f9f9;
 $cd-couleur_palette: #fdfffd;
 $cd-couleur_txt_note: #3c1218;
 $cd-couleur_txt_chic: #c77412;
-$cd-couleur_txt_delice: #0887fb;
+$cd-couleur_txt_delice: #102cf8;
 $cd-couleur_txt_palette: #72bf56;
 .logo{
     padding-top:5rem;
@@ -35,8 +35,9 @@ body{
     justify-content: center;
     font-size: 3rem;
     text-align: center;
-    & a{
-        font-size:5rem;
+
+    & a {
+        font-size: 5rem;
     }
 
 
@@ -49,11 +50,15 @@ body{
         & h1 {
             font-family: 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif,;
             font-style: oblique;
-            font-size: 3rem;
+            font-size: 2.8rem;
+            background: -webkit-gradient(linear, left center, right center, from($cd-couleur_txt_chic), to(#0d25d1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         & a {
             color: $cd-couleur_txt_chic;
+            font-family: 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif,;
         }
     }
 
@@ -63,13 +68,17 @@ body{
         color: $cd-couleur_txt_palette;
 
         & h1 {
-            font-family: 'tex_gyre_pagellabold_italic', 'Bell MT, 'Georgia,'Comic Sans MS';
+            font-family: 'tex_gyre_pagellabold_italic','Comic Sans MS';
             font-style: italic;
-            font-size: 4rem;
+            font-size: 3.5rem;
+            background: -webkit-gradient(linear, left center, right center, from($cd-couleur_txt_palette), to(#a2fa81));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         & a {
             color: $cd-couleur_txt_palette;
+            font-family: 'tex_gyre_pagellabold_italic','Comic Sans MS';
         }
     }
 
@@ -81,10 +90,15 @@ body{
         & h1 {
             font-family: 'Edwardian Script ITC','Elephant','EmojiOne Color', Georgia Pro,;
             font-style: italic;
+            background: -webkit-gradient(linear, left center, right center, from($cd-couleur_txt_delice), to(#0dbbd1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         & a {
-            color: $cd-couleur_txt_delice;
+            color: #0dbbd1;
+            font-family: 'tex_gyre_pagellabold_italic','Comic Sans MS';
+            font-style: italic;
         }
     }
 
@@ -94,6 +108,7 @@ body{
         color: $cd-couleur_txt_note;
         font-size: 3rem;
 
+
         & h1 {
             font-family: 'calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
             margin-top: 0;
@@ -102,10 +117,13 @@ body{
 
         & a {
             color: $cd-couleur_txt_note;
+            font-family: 'calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
         }
 
         & i {
-            color: darkorange;
+            background: -webkit-gradient(linear, left center, right center, from(#b50747), to(#e27e07));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 
