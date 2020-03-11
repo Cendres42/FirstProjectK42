@@ -65,18 +65,18 @@ body {
   border-radius: 0.5rem;
   padding-top: 15rem;
   background-color: #fff5fe;
-  color: #c77412;
+  color: #c67412;
 }
 .menus__chic h1 {
   font-family: "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
   font-style: oblique;
   font-size: 2.8rem;
-  background: -webkit-gradient(linear, left center, right center, from(#c77412), to(#0d25d1));
+  background: -webkit-gradient(linear, left center, right center, from(#c67412), color-stop(0.5, #a56799), to(#6e4ccc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menus__chic a {
-  color: #c77412;
+  color: #c67412;
   font-family: "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
 }
 .menus__palette {
@@ -256,7 +256,7 @@ header img {
 
 #infos-legales {
   font-size: 2rem;
-  margin-botom: 10rem;
+  margin-bottom: 15rem;
 }
 #infos-legales p {
   margin-left: 6rem;
@@ -268,6 +268,39 @@ header img {
   color: #579c87;
   font-size: 3rem;
   margin-left: 3rem;
+}
+
+/* <<<<<<<<<<<<<<<<<<MENU LE CHIC A LA FRANCAISE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.menu-chic {
+  background-color: #fff5fe;
+  font-family: "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 20rem;
+}
+.menu-chic h1 {
+  font-style: oblique;
+  font-size: 4.5rem;
+  background: -webkit-gradient(linear, left center, right center, from(#c67412), color-stop(0.5, #a56799), to(#6e4ccc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 5rem;
+}
+.menu-chic h2 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.menu-chic p {
+  font-size: 2rem;
+}
+.menu-chic .entrees {
+  color: #c67412;
+}
+.menu-chic .plats {
+  color: #a56799;
+}
+.menu-chic .desserts {
+  color: #6e4ccc;
 }
 
 /*# sourceMappingURL=style.css.map */
