@@ -1,0 +1,204 @@
+.logo {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  text-align: center;
+}
+.menus a {
+  font-size: 5rem;
+}
+.menus__chic {
+  height: 40rem;
+  width: 40rem;
+  margin: 5rem;
+  box-shadow: 1px 1px 19px 2px #a69fa6;
+  border-radius: 0.5rem;
+  padding-top: 15rem;
+  background-color: #fff5fe;
+  color: #c77412;
+}
+.menus__chic h1 {
+  font-family: "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 2.8rem;
+  background: -webkit-gradient(linear, left center, right center, from(#c77412), to(#0d25d1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menus__chic a {
+  color: #c77412;
+  font-family: "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
+}
+.menus__palette {
+  height: 40rem;
+  width: 40rem;
+  margin: 5rem;
+  box-shadow: 1px 1px 19px 2px #a69fa6;
+  border-radius: 0.5rem;
+  padding-top: 15rem;
+  background-color: #fdfffd;
+  color: #72bf56;
+}
+.menus__palette h1 {
+  font-family: "tex_gyre_pagellabold_italic", "Comic Sans MS";
+  font-style: italic;
+  font-size: 3.5rem;
+  background: -webkit-gradient(linear, left center, right center, from(#72bf56), to(#a2fa81));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menus__palette a {
+  color: #72bf56;
+  font-family: "tex_gyre_pagellabold_italic", "Comic Sans MS";
+}
+.menus__delice {
+  height: 40rem;
+  width: 40rem;
+  margin: 5rem;
+  box-shadow: 1px 1px 19px 2px #a69fa6;
+  border-radius: 0.5rem;
+  padding-top: 15rem;
+  background-color: #f9f9f9;
+  color: #102cf8;
+}
+.menus__delice h1 {
+  font-family: "Edwardian Script ITC", "Elephant", "EmojiOne Color", Georgia Pro;
+  font-style: italic;
+  background: -webkit-gradient(linear, left center, right center, from(#102cf8), to(#0dbbd1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menus__delice a {
+  color: #0dbbd1;
+  font-family: "tex_gyre_pagellabold_italic", "Comic Sans MS";
+  font-style: italic;
+}
+.menus__note {
+  background-color: #fcdfdb;
+  height: 40rem;
+  width: 40rem;
+  margin: 5rem;
+  box-shadow: 1px 1px 19px 2px #a69fa6;
+  border-radius: 0.5rem;
+  padding-top: 15rem;
+  color: #3c1218;
+  font-size: 3rem;
+}
+.menus__note h1 {
+  font-family: "calligraffitiregular", "tex_gyre_pagellaregular", "Comic Sans MS", serif;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.menus__note a {
+  color: #3c1218;
+  font-family: "calligraffitiregular", "tex_gyre_pagellaregular", "Comic Sans MS", serif;
+}
+.menus__note i {
+  background: -webkit-gradient(linear, left center, right center, from(#b50747), to(#e27e07));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menus a {
+  text-decoration: none;
+}
+
+#basdepage, #basdepage a {
+  display: flex;
+  background-color: #579c87;
+  color: #fdcb46;
+  font-size: 2.5rem;
+  justify-content: space-between;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+#contenu-futur {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 25rem;
+  background-color: #579c87;
+  color: #fdcb46;
+  font-size: 3rem;
+  border-radius: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#prochainement {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+header {
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+}
+
+.menu-grand {
+  text-align: center;
+  margin: 6rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "calligraffitiregular";
+  src: url("Calligraffiti-webfont.eot");
+  src: url("Calligraffiti-webfont.eot?#iefix") format("embedded-opentype"), url("Calligraffiti-webfont.woff2") format("woff2"), url("Calligraffiti-webfont.woff") format("woff"), url("Calligraffiti-webfont.ttf") format("truetype"), url("Calligraffiti-webfont.svg#calligraffitiregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tex_gyre_pagellabold";
+  src: url("texgyrepagella-bold-webfont.eot");
+  src: url("texgyrepagella-bold-webfont.eot?#iefix") format("embedded-opentype"), url("texgyrepagella-bold-webfont.woff2") format("woff2"), url("texgyrepagella-bold-webfont.woff") format("woff"), url("texgyrepagella-bold-webfont.ttf") format("truetype"), url("texgyrepagella-bold-webfont.svg#tex_gyre_pagellabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tex_gyre_pagellaitalic";
+  src: url("texgyrepagella-italic-webfont.eot");
+  src: url("texgyrepagella-italic-webfont.eot?#iefix") format("embedded-opentype"), url("texgyrepagella-italic-webfont.woff2") format("woff2"), url("texgyrepagella-italic-webfont.woff") format("woff"), url("texgyrepagella-italic-webfont.ttf") format("truetype"), url("texgyrepagella-italic-webfont.svg#tex_gyre_pagellaitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tex_gyre_pagellaregular";
+  src: url("texgyrepagella-regular-webfont.eot");
+  src: url("texgyrepagella-regular-webfont.eot?#iefix") format("embedded-opentype"), url("texgyrepagella-regular-webfont.woff2") format("woff2"), url("texgyrepagella-regular-webfont.woff") format("woff"), url("texgyrepagella-regular-webfont.ttf") format("truetype"), url("texgyrepagella-regular-webfont.svg#tex_gyre_pagellaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=style.css.map */
