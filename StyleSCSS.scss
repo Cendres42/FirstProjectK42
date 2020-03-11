@@ -21,10 +21,11 @@ $cd-couleur_txt_palette: #72bf56;
     padding-top: 15rem;
 }
 html {
-    font-size: 62.5%;
+    font-size: 45%;
     height: 100%;
-    width:100%;
-}
+    width: 100%;
+       }
+
 body{
     margin:0;
     padding:0;
@@ -35,6 +36,10 @@ body{
     justify-content: center;
     font-size: 3rem;
     text-align: center;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 
     & a {
         font-size: 5rem;
@@ -140,7 +145,9 @@ body{
     justify-content: space-between;
     padding: 1rem;
     text-decoration: none;
-    }
+
+       }
+
 
 #contenu-futur {
     margin-top: 5rem;
@@ -160,6 +167,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom:10rem;
 }
 h1 {
     font-size: 5rem;
@@ -171,6 +179,7 @@ h1 {
     background-color: $cd-vert;
     color: $cd-jaune;
     text-align:center;
+    min-width:100%;
   }
  .menu-grand{
      text-align:center;
@@ -212,5 +221,9 @@ width: 100%;
     font-weight: normal;
     font-style: normal;
 }
-
+img{
+    height:12rem;
+    width:50rem;
+    margin-bottom:2.5rem;
+}
 
