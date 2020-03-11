@@ -9,6 +9,23 @@
     transform: translate(0, 0);
   }
 }
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .logo {
   padding-top: 5rem;
   padding-bottom: 3rem;
@@ -144,6 +161,9 @@ body {
   padding: 1rem;
   text-decoration: none;
 }
+#basdepage #Mentions, #basdepage #Contact, #basdepage a #Mentions, #basdepage a #Contact {
+  animation: wiggle 1s infinite;
+}
 
 .futur {
   margin-top: 5rem;
@@ -232,6 +252,22 @@ header img {
   height: 12rem;
   width: 50rem;
   margin-bottom: 2.5rem;
+}
+
+#infos-legales {
+  font-size: 2rem;
+  margin-botom: 10rem;
+}
+#infos-legales p {
+  margin-left: 6rem;
+}
+#infos-legales li {
+  list-style-type: none;
+}
+#infos-legales h2 {
+  color: #579c87;
+  font-size: 3rem;
+  margin-left: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -28,8 +28,31 @@ $cd-couleur_txt_palette: #72bf56;
  100% {
         transform: translate(0,0);
     }
+ }
+ @keyframes wiggle {
+        0% {
+            transform: rotate(0deg);
+        }
 
-}
+        80% {
+            transform: rotate(0deg);
+        }
+
+        85% {
+            transform: rotate(5deg);
+        }
+
+        95% {
+            transform: rotate(-5deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+
+
 .logo {
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -160,7 +183,10 @@ body{
     padding: 1rem;
     text-decoration: none;
 
-       }
+    & #Mentions, #Contact {
+        animation: wiggle 1s infinite;
+    }
+}
 
 
 .futur {
@@ -196,7 +222,7 @@ body{
     justify-content: center;
     margin-bottom: 10rem;
 
-   
+    
 }
 h1 {
     font-size: 5rem;
@@ -256,3 +282,21 @@ header img{
     margin-bottom:2.5rem;
 }
 
+#infos-legales {
+    font-size: 2rem;
+    margin-bottom:15rem;
+
+    & p {
+        margin-left: 6rem;
+    }
+
+    & li {
+        list-style-type: none;
+    }
+
+    & h2 {
+        color: $cd-vert;
+        font-size: 3rem;
+        margin-left:3rem;
+    }
+}
