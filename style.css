@@ -1,3 +1,14 @@
+@keyframes points {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .logo {
   padding-top: 5rem;
   padding-bottom: 3rem;
@@ -134,10 +145,10 @@ body {
   text-decoration: none;
 }
 
-#contenu-futur {
+.futur {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  width: 25rem;
+  width: 30rem;
   background-color: #579c87;
   color: #fdcb46;
   font-size: 3rem;
@@ -147,6 +158,16 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
+  display: flex;
+}
+.futur__img1 {
+  animation: points 2s 0.5s ease-in-out infinite;
+}
+.futur__img2 {
+  animation: points 2s 1s ease-in-out infinite;
+}
+.futur__img3 {
+  animation: points 2s 1.5s ease-in-out infinite;
 }
 
 #prochainement {
@@ -207,7 +228,7 @@ footer {
   font-weight: normal;
   font-style: normal;
 }
-img {
+header img {
   height: 12rem;
   width: 50rem;
   margin-bottom: 2.5rem;
