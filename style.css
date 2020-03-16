@@ -69,7 +69,6 @@ body {
 }
 .menus__chic h1 {
   font-family: "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
-  font-style: oblique;
   font-size: 2.8rem;
   background: -webkit-gradient(linear, left center, right center, from(#c67412), color-stop(0.5, #a56799), to(#6e4ccc));
   -webkit-background-clip: text;
@@ -114,7 +113,7 @@ body {
 .menus__delice h1 {
   font-family: "Edwardian Script ITC", "Elephant", "EmojiOne Color", Georgia Pro;
   font-style: italic;
-  background: -webkit-gradient(linear, left center, right center, from(#102cf8), to(#0dbbd1));
+  background: -webkit-gradient(linear, top left, bottom right, from(#102cf8), to(#0dbbd1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -279,37 +278,36 @@ header img {
   text-align: center;
   margin-left: 35rem;
   margin-right: 35rem;
-  margin-top: 20rem;
+  margin-top: 4rem;
   margin-bottom: 20rem;
   padding-bottom: 15rem;
 }
 .menu-chic h1 {
-  font-style: oblique;
   font-size: 5.5rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(#c67412), color-stop(0.7, #a56799), to(#6e4ccc));
+  background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 0;
-  padding-top: 20rem;
-  padding-bottom: 15rem;
+  padding-top: 18rem;
+  padding-bottom: 12rem;
 }
 .menu-chic h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
 }
-.menu-chic img {
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
 .menu-chic p {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 .menu-chic .entrees {
   color: #c67412;
 }
 .menu-chic .plats {
   color: #a56799;
+}
+.menu-chic .plats img {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 .menu-chic .desserts {
   color: #6e4ccc;
@@ -321,6 +319,57 @@ header img {
   margin-right: 20rem;
 }
 .menu-chic .nom-desserts {
+  margin-left: 20rem;
+  text-align: left;
+}
+
+.menu-delice {
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-left: 35rem;
+  margin-right: 35rem;
+  margin-top: 4rem;
+  margin-bottom: 20rem;
+  padding-bottom: 15rem;
+}
+.menu-delice h1 {
+  font-family: "Edwardian Script ITC", "Elephant", "EmojiOne Color", Georgia Pro;
+  font-style: italic;
+  background: -webkit-gradient(linear, left center, right center, from(#102cf8), to(#0dbbd1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  font-size: 10rem;
+}
+.menu-delice h2 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  font-family: "tex_gyre_pagellabold", "comic sans MS", Georgia, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.menu-delice .entrees img {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.menu-delice .plats img, .menu-delice .desserts img {
+  padding-right: 6rem;
+  padding-left: 6rem;
+}
+.menu-delice p {
+  font-size: 2rem;
+  font-family: "tex_gyre_pagellabold", "comic sans MS", Georgia, Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+.menu-delice .nom-prix {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+.menu-delice .nom-desserts {
   margin-left: 20rem;
   text-align: left;
 }
