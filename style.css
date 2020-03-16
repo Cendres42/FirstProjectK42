@@ -135,9 +135,10 @@ body {
   color: #3c1218;
 }
 .menus__note h1 {
-  font-family: "Ma Shan Zheng", "Dancing Script", "calligraffitiregular", "tex_gyre_pagellaregular", "Comic Sans MS", serif;
+  font-family: "Devonshire", "Dancing Script", "calligraffitiregular", "tex_gyre_pagellaregular", "Comic Sans MS", serif;
   margin-top: 0;
   font-size: 4rem;
+  color: #3c1218;
 }
 .menus__note a {
   color: #3c1218;
