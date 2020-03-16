@@ -1,0 +1,48 @@
+.menu-chic {
+  background-color: #fff5fe;
+  text-align: center;
+  margin-left: 35rem;
+  margin-right: 35rem;
+  margin-top: 4rem;
+  margin-bottom: 20rem;
+  padding-bottom: 15rem;
+}
+.menu-chic h1 {
+  font-size: 12rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#e38913), to(#8f5bfe));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+  padding-top: 18rem;
+  padding-bottom: 12rem;
+  font-family: Katibeh, "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
+}
+.menu-chic h2 {
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.menu-chic p {
+  font-size: 2.8rem;
+}
+.menu-chic .entrees {
+  color: #c67412;
+}
+.menu-chic .plats {
+  color: #a56799;
+}
+.menu-chic .desserts {
+  color: #6e4ccc;
+}
+.menu-chic .nom-prix {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+.menu-chic .nom-desserts {
+  margin-left: 20rem;
+  text-align: left;
+}
+
+/*# sourceMappingURL=style_chic.css.map */

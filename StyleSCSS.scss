@@ -73,7 +73,6 @@ body{
 .menus {
     display: flex;
     justify-content: center;
-    font-size: 3rem;
     text-align: center;
 
     @media (max-width: 800px) {
@@ -94,14 +93,16 @@ body{
         & h1 {
             font-family: 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif,;
             font-size: 2.8rem;
-            background: -webkit-gradient(linear, left center, right center, from($cd-couleur_txt_chic),color-stop(0.5, #a56799), to(#6e4ccc));
+            background: -webkit-gradient(linear, left top, right bottom, from(#e38913), to(#8f5bfe));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         & a {
             color: $cd-couleur_txt_chic;
-            font-family: 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif,;
+            font-family: 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif;
+            font-weight:bold;
+            font-size:5rem;
         }
     }
 
@@ -111,7 +112,7 @@ body{
         color: $cd-couleur_txt_palette;
 
         & h1 {
-            font-family: 'tex_gyre_pagellabold_italic','Comic Sans MS';
+            font-family: 'Kaushan Script', 'tex_gyre_pagellabold_italic','Comic Sans MS';
             font-style: italic;
             font-size: 3.5rem;
             background: -webkit-gradient(linear, left center, right center, from($cd-couleur_txt_palette), to(#a2fa81));
@@ -121,7 +122,8 @@ body{
 
         & a {
             color: $cd-couleur_txt_palette;
-            font-family: 'tex_gyre_pagellabold_italic','Comic Sans MS';
+            font-family: 'Caveat','tex_gyre_pagellabold_italic','Comic Sans MS';
+            font-size:8rem;
         }
     }
 
@@ -133,16 +135,16 @@ body{
 
         & h1 {
             font-family: "Dancing script",'Edwardian Script ITC', Georgia,;
-            font-style: italic;
             background: -webkit-gradient(linear, left center, right center, from($cd-couleur_txt_delice), to(#0dbbd1));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-size:4rem;
         }
 
         & a {
-            color: #0dbbd1;
-            font-family: 'tex_gyre_pagellabold_italic','Comic Sans MS';
-            font-style: italic;
+            color: #0887fb;
+            font-family: 'Caveat', 'tex_gyre_pagellabold_italic','Comic Sans MS';
+            font-size: 8rem;
         }
     }
 
@@ -150,18 +152,21 @@ body{
         background-color: $cd-couleur_note;
         @include cadres-menus;
         color: $cd-couleur_txt_note;
-        font-size: 3rem;
+
 
 
         & h1 {
-            font-family: 'calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
+            font-family: 'Ma Shan Zheng','Dancing Script','calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
             margin-top: 0;
-            font-size: 3rem;
+            font-size: 4rem;
+
         }
 
         & a {
             color: $cd-couleur_txt_note;
             font-family: 'calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
+            font-style:italic;
+            font-size:4rem;
         }
 
         & i {
@@ -229,9 +234,12 @@ body{
 h1 {
     font-size: 5rem;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 0;
+    font-family: rubik, sans-serif;
+    color:#302f2f;
 }
+
  header
  {
     background-color: $cd-vert;
@@ -303,4 +311,3 @@ header img{
         margin-left:3rem;
     }
 }
-
