@@ -1,22 +1,9 @@
 ﻿
 $cd-vert:#579c87;
 $cd-jaune:#fdcb46;
-$cd-couleur_note:#fcdfdb;
-$cd-couleur_chic:#fff5fe;
 $cd-couleur_delice:#f9f9f9;
-$cd-couleur_palette: #fdfffd;
-$cd-couleur_txt_note: #3c1218;
-$cd-couleur_txt_chic: #c67412;
 $cd-couleur_txt_delice: #102cf8;
-$cd-couleur_txt_palette: #72bf56;
 
-h1 {
-    font-size: 5rem;
-    text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 0;
-    font-family:rubik, sans-serif;
-}
 
 .menu-delice {
     background-color: $cd-couleur_delice;
@@ -26,8 +13,8 @@ h1 {
     margin-top: 4rem;
     margin-bottom: 20rem;
     padding-bottom: 15rem;
-   
-  
+
+
 & h1 {
     font-family: "Dancing script",'Edwardian Script ITC', Georgia,;
     font-style: italic;
