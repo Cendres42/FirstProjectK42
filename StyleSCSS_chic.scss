@@ -1,0 +1,79 @@
+﻿
+$cd-vert:#579c87;
+$cd-jaune:#fdcb46;
+$cd-couleur_note:#fcdfdb;
+$cd-couleur_chic:#fff5fe;
+$cd-couleur_delice:#f9f9f9;
+$cd-couleur_palette: #fdfffd;
+$cd-couleur_txt_note: #3c1218;
+$cd-couleur_txt_chic: #c67412;
+$cd-couleur_txt_delice: #102cf8;
+$cd-couleur_txt_palette:#72bf56;
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    font-family: rubik, sans-serif;
+}
+
+.menu-chic {
+    background-color: $cd-couleur_chic;
+    text-align: center;
+    margin-left: 35rem;
+    margin-right: 35rem;
+    margin-top: 4rem;
+    margin-bottom: 20rem;
+    padding-bottom: 15rem;
+
+
+    & h1
+{
+    font-size: 12rem;
+    background: -webkit-gradient(linear, left top, right bottom, from(#e38913), to(#8f5bfe));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    padding-top: 18rem;
+    padding-bottom: 12rem;
+    font-family: Katibeh, 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif,;
+}
+
+
+& h2 {
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+
+& p {
+    font-size: 2.8rem;
+}
+
+& .entrees {
+    color: $cd-couleur_txt_chic;
+}
+
+& .plats {
+    color: #a56799;
+ }
+
+& .desserts {
+    color: #6e4ccc;
+}
+
+& .nom-prix {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+& .nom-desserts {
+    margin-left: 20rem;
+    text-align: left;
+}
+
+}
