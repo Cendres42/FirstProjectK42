@@ -1,19 +1,66 @@
-﻿
-$cd-vert:#579c87;
-$cd-jaune:#fdcb46;
-$cd-couleur_note:#fcdfdb;
-$cd-couleur_chic:#fff5fe;
-$cd-couleur_delice:#f9f9f9;
-$cd-couleur_palette: #fdfffd;
-$cd-couleur_txt_note: #3c1218;
-$cd-couleur_txt_chic: #c67412;
-$cd-couleur_txt_delice: #102cf8;
-$cd-couleur_txt_palette: #72bf56;
+﻿$cd-couleur_txt_palette: #72bf56;
 
-h1 {
-    font-size: 5rem;
+$cd-couleur_palette: #fdfffd;
+
+
+.menu-palette {
+    background-color: $cd-couleur_palette;
     text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 0;
-    font-family: rubik, sans-serif;
+    margin-left: 35rem;
+    margin-right: 35rem;
+    margin-top: 4rem;
+    margin-bottom: 20rem;
+    padding-bottom: 15rem;
+
+
+    & h1 {
+        font-size: 6rem;
+        font-family: 'Kaushan Script', 'tex_gyre_pagellabold_italic','Comic Sans MS';
+        font-style: italic;
+        background: -webkit-gradient(linear, left center, right center, from(#41963c), to(#beff7f));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 0;
+       
+        padding-bottom: 6rem;
+    }
+
+    & h2 {
+        font-size: 3.5rem;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        font-family: Caveat,'tex_gyre_pagellabold', "comic sans MS",Georgia, Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+
+    & p {
+        font-size: 2.8rem;
+        font-family: Caveat,'tex_gyre_pagellabold', "comic sans MS",Georgia, Arial, Helvetica, sans-serif;
+    }
+
+    & .nom-prix {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15rem;
+        margin-right: 18rem;
+    }
+
+    .entrees img {
+        height: 1rem;
+        margin-left: 9rem;
+        margin-right: 9rem;
+    }
+
+    .plats img {
+        height: 1rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    .desserts img {
+        height: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
 }
