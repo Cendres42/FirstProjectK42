@@ -1,3 +1,11 @@
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 0;
+  font-family: rubik, sans-serif;
+}
+
 .menu-delice {
   background-color: #f9f9f9;
   text-align: center;
@@ -19,7 +27,7 @@
   font-size: 8rem;
 }
 .menu-delice h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
   font-family: Caveat, "tex_gyre_pagellabold", "comic sans MS", Georgia, Arial, Helvetica, sans-serif;
@@ -34,7 +42,7 @@
   padding-left: 6rem;
 }
 .menu-delice p {
-  font-size: 1.8rem;
+  font-size: 2.75rem;
   font-family: Caveat, "tex_gyre_pagellabold", "comic sans MS", Georgia, Arial, Helvetica, sans-serif;
   text-align: left;
 }
