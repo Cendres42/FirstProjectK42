@@ -7,7 +7,7 @@
   margin-bottom: 20rem;
   padding-bottom: 15rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .menu-palette {
     margin-right: 0;
     margin-left: 0;
@@ -57,8 +57,8 @@
 }
 @media (max-width: 800px) {
   .menu-palette .nom-prix {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 }
 .menu-palette .entrees img {
