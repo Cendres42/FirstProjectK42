@@ -7,6 +7,18 @@
   margin-bottom: 20rem;
   padding-bottom: 15rem;
 }
+@media (max-width: 1280px) {
+  .menu-delice {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 480px) {
+  .menu-delice {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 .menu-delice h1 {
   font-family: "Dancing script", "Edwardian Script ITC", Georgia;
   font-style: italic;
@@ -18,12 +30,32 @@
   padding-bottom: 3rem;
   font-size: 8rem;
 }
+@media (max-width: 801) {
+  .menu-delice h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 480px) {
+  .menu-delice h1 {
+    font-size: 5rem;
+  }
+}
 .menu-delice h2 {
   font-size: 4rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
   font-family: Caveat, "tex_gyre_pagellabold", "comic sans MS", Georgia, Arial, Helvetica, sans-serif;
   font-weight: normal;
+}
+@media (max-width: 1280px) {
+  .menu-delice h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .menu-delice h2 {
+    font-size: 4rem;
+  }
 }
 .menu-delice .entrees img {
   padding-right: 5rem;
@@ -38,15 +70,45 @@
   font-family: Caveat, "tex_gyre_pagellabold", "comic sans MS", Georgia, Arial, Helvetica, sans-serif;
   text-align: left;
 }
+@media (max-width: 480px) {
+  .menu-delice p {
+    margin: 2rem;
+    font-size: 4rem;
+  }
+}
 .menu-delice .nom-prix {
   display: flex;
   justify-content: space-between;
   margin-left: 20rem;
   margin-right: 20rem;
 }
+@media (max-width: 1280px) {
+  .menu-delice .nom-prix {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+}
 .menu-delice .nom-desserts {
   margin-left: 20rem;
   text-align: left;
+}
+@media (max-width: 801px) {
+  .menu-delice img {
+    height: 0.9rem;
+    width: 17rem;
+  }
+}
+@media (max-width: 480px) {
+  .menu-delice img {
+    height: 0.4rem;
+    width: 7rem;
+  }
+}
+@media (max-width: 480px) {
+  .menu-delice .entrees img, .menu-delice .plats img, .menu-delice .desserts img {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style_delice.css.map */

@@ -12,7 +12,7 @@ $cd-couleur_txt_palette:#72bf56;
 
 .menu-chic {
     background-color: $cd-couleur_chic;
-    text-align: center;
+    text-align: left;
     margin-left: 35rem;
     margin-right: 35rem;
     margin-top: 4rem;
@@ -106,10 +106,7 @@ $cd-couleur_txt_palette:#72bf56;
         @media (max-width: 1280px) {
         margin-left: 5rem;
         }
-        @media (max-width: 480px) {
-          text-align: center;
-          margin-right:10rem;
-                        }
+
     }
 
     & img {
