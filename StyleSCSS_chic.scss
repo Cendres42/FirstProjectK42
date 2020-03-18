@@ -18,12 +18,14 @@ $cd-couleur_txt_palette:#72bf56;
     margin-top: 4rem;
     margin-bottom: 20rem;
     padding-bottom: 15rem;
-    @media (max-width: 1200px) {
-        margin-right: 0;
-        margin-left: 0;
+    @media (max-width: 1280px) {
+        margin-right: 10rem;
+        margin-left: 10rem;
         }
-    
-
+        @media (max-width: 480px) {
+            margin-right: 0;
+            margin-left: 0;
+            }
     & h1 {
         font-size: 8rem;
         background: -webkit-gradient(linear, left top, right bottom, from(#e38913), to(#8f5bfe));
@@ -33,6 +35,9 @@ $cd-couleur_txt_palette:#72bf56;
         padding-top: 10rem;
         padding-bottom: 6rem;
         font-family: Katibeh, 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif,;
+        @media(max-width:801){
+          font-size:6rem;
+        }
     }
 
 
@@ -40,24 +45,25 @@ $cd-couleur_txt_palette:#72bf56;
         font-size: 3.2rem;
         margin-bottom: 5rem;
         margin-top: 5rem;
-        @media (max-width: 1200px) {
-            font-size: 2rem;
+        @media (max-width: 1280px) {
+            font-size: 2.5rem;
         }
     }
 
-
     & p {
         font-size: 2.2rem;
-
+        @media (max-width: 480px) {
+            margin: 2rem;
+            font-size: 3rem;
+            }
     }
 
     & .entrees {
         color: $cd-couleur_txt_chic;
-
         & img {
             margin-left: 2rem;
-            margin-right: 2rem
-        }
+            margin-right: 2rem;
+              }
     }
 
 
@@ -67,6 +73,7 @@ $cd-couleur_txt_palette:#72bf56;
     & img {
         margin-left: 5.3rem;
         margin-right: 5.3rem
+
     }
 }
 
@@ -77,15 +84,17 @@ $cd-couleur_txt_palette:#72bf56;
         & img {
             margin-left: 4rem;
             margin-right: 4rem
+                      }
+
         }
-    }
+
 
     & .nom-prix {
         display: flex;
         justify-content: space-between;
         margin-left: 20rem;
         margin-right: 20rem;
-        @media (max-width: 1200px) {
+        @media (max-width: 1280px) {
             margin-right: 5rem;
             margin-left: 5rem;
         }
@@ -94,19 +103,31 @@ $cd-couleur_txt_palette:#72bf56;
     & .nom-desserts {
         margin-left: 20rem;
         text-align: left;
-        @media (max-width: 1200px) {
+        @media (max-width: 1280px) {
         margin-left: 5rem;
         }
+        @media (max-width: 480px) {
+          text-align: center;
+          margin-right:10rem;
+                        }
     }
 
     & img {
         height: 2rem;
         width: 25rem;
-        @media (max-width: 1200px) {
-                  margin-right: 0;
-                  margin-left: 0;
+        @media (max-width: 801px) {
                   height:1rem;
                   width:15rem;
               }
+              @media (max-width: 480px) {
+                        height:0.5rem;
+                        width:7rem;
+                    }
+    }
+    .entrees img, .plats img, .desserts img{
+      @media (max-width: 801px) {
+                margin-right: 0;
+                margin-left: 0;
+        }
     }
 }
