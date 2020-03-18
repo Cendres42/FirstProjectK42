@@ -36,6 +36,11 @@ html {
   height: 100%;
   width: 100%;
 }
+@media (max-width: 350px) {
+  html {
+    font-size: 35%;
+  }
+}
 
 body {
   margin: 0;
@@ -207,6 +212,11 @@ h1 {
   margin-bottom: 0;
   font-family: rubik, sans-serif;
   color: #302f2f;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 header {

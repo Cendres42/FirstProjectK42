@@ -63,6 +63,9 @@ html {
     font-size: 45%;
     height: 100%;
     width: 100%;
+    @media (max-width:350px){
+      font-size:35%;
+    }
        }
 
 body{
@@ -77,7 +80,7 @@ body{
 
     @media (max-width: 800px) {
         flex-direction: column;
-        
+
     }
 
     & a {
@@ -240,6 +243,10 @@ h1 {
     margin-bottom: 0;
     font-family: rubik, sans-serif;
     color:#302f2f;
+    @media (max-width: 480px) {
+          font-size: 4rem;
+
+    }
 }
 
  header
