@@ -45,6 +45,8 @@ $cd-couleur_txt_palette:#72bf56;
         font-size: 3.2rem;
         margin-bottom: 5rem;
         margin-top: 5rem;
+        text-align:center;
+
         @media (max-width: 1280px) {
             font-size: 2.5rem;
         }
@@ -121,10 +123,31 @@ $cd-couleur_txt_palette:#72bf56;
                         width:7rem;
                     }
     }
+  }
     .entrees img, .plats img, .desserts img{
       @media (max-width: 801px) {
                 margin-right: 0;
                 margin-left: 0;
         }
+    }
+    h2 span{
+      position: relative;
+       &:hover{
+       &::after{
+        transform:scaleX(1);
+      }
+    }
+
+    &::after{
+      content:"";
+      background-color:$cd-couleur_txt_chic;
+      transition:transform 2s;
+      transform-origin: 0 0;
+      transform: scaleX(0);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.4rem;
     }
 }

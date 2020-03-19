@@ -38,6 +38,7 @@
   font-size: 3.2rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
+  text-align: center;
 }
 @media (max-width: 1280px) {
   .menu-chic h2 {
@@ -111,11 +112,31 @@
     width: 7rem;
   }
 }
+
 @media (max-width: 801px) {
-  .menu-chic .entrees img, .menu-chic .plats img, .menu-chic .desserts img {
+  .entrees img, .plats img, .desserts img {
     margin-right: 0;
     margin-left: 0;
   }
+}
+
+h2 span {
+  position: relative;
+}
+h2 span:hover::after {
+  transform: scaleX(1);
+}
+h2 span::after {
+  content: "";
+  background-color: #c67412;
+  transition: transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
 }
 
 /*# sourceMappingURL=style_chic.css.map */

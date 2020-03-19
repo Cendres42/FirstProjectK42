@@ -62,14 +62,20 @@ body {
   font-size: 5rem;
 }
 .menus__chic {
-  height: 40rem;
-  width: 40rem;
+  height: 400px;
+  width: 300px;
   margin: 5rem;
   box-shadow: 1px 1px 19px 2px #a69fa6;
   border-radius: 0.5rem;
   padding-top: 15rem;
+  overflow: hidden;
   background-color: #fff5fe;
   color: #c67412;
+  transition: all 2s ease-in-out 0s;
+}
+.menus__chic:hover {
+  opacity: 0.5;
+  transform: scale(1.5);
 }
 .menus__chic h1 {
   font-family: "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
@@ -85,14 +91,16 @@ body {
   font-size: 5rem;
 }
 .menus__palette {
-  height: 40rem;
-  width: 40rem;
+  height: 400px;
+  width: 300px;
   margin: 5rem;
   box-shadow: 1px 1px 19px 2px #a69fa6;
   border-radius: 0.5rem;
   padding-top: 15rem;
+  overflow: hidden;
   background-color: #fdfffd;
   color: #72bf56;
+  transition: transform 4s, ease-in-out;
 }
 .menus__palette h1 {
   font-family: "Kaushan Script", "tex_gyre_pagellabold_italic", "Comic Sans MS";
@@ -108,12 +116,13 @@ body {
   font-size: 8rem;
 }
 .menus__delice {
-  height: 40rem;
-  width: 40rem;
+  height: 400px;
+  width: 300px;
   margin: 5rem;
   box-shadow: 1px 1px 19px 2px #a69fa6;
   border-radius: 0.5rem;
   padding-top: 15rem;
+  overflow: hidden;
   background-color: #f9f9f9;
   color: #102cf8;
 }
@@ -131,12 +140,13 @@ body {
 }
 .menus__note {
   background-color: #fcdfdb;
-  height: 40rem;
-  width: 40rem;
+  height: 400px;
+  width: 300px;
   margin: 5rem;
   box-shadow: 1px 1px 19px 2px #a69fa6;
   border-radius: 0.5rem;
   padding-top: 15rem;
+  overflow: hidden;
   color: #3c1218;
 }
 .menus__note h1 {

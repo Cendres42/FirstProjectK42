@@ -12,12 +12,13 @@ $cd-couleur_txt_delice: #102cf8;
 $cd-couleur_txt_palette: #72bf56;
 
 @mixin cadres-menus {
-    height: 40rem;
-    width: 40rem;
+    height: 400px;
+    width: 300px;
     margin: 5rem;
     box-shadow: 1px 1px 19px 2px #a69fa6;
     border-radius: 0.5rem;
     padding-top: 15rem;
+    overflow:hidden;
 }
 @keyframes points{
 0% {
@@ -54,7 +55,6 @@ $cd-couleur_txt_palette: #72bf56;
     }
 
 
-
 .logo {
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -78,6 +78,7 @@ body{
     justify-content: center;
     text-align: center;
 
+
     @media (max-width: 800px) {
         flex-direction: column;
 
@@ -93,6 +94,11 @@ body{
         @include cadres-menus;
         background-color: $cd-couleur_chic;
         color: $cd-couleur_txt_chic;
+        transition:all 2s ease-in-out 0s;
+        &:hover {
+            opacity: 0.5;
+            transform:scale(1.5);
+            }
 
         & h1 {
             font-family: 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif,;
@@ -114,6 +120,7 @@ body{
         @include cadres-menus;
         background-color: $cd-couleur_palette;
         color: $cd-couleur_txt_palette;
+        transition: transform 4s, ease-in-out;
 
         & h1 {
             font-family: 'Kaushan Script', 'tex_gyre_pagellabold_italic','Comic Sans MS';

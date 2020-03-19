@@ -111,4 +111,23 @@
   }
 }
 
+h2 span {
+  position: relative;
+}
+h2 span:hover::after {
+  transform: scaleX(1);
+}
+h2 span::after {
+  content: "";
+  background-color: #102cf8;
+  transition: transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
+}
+
 /*# sourceMappingURL=style_delice.css.map */

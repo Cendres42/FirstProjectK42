@@ -174,3 +174,25 @@ $cd-couleur_txt_palette: #72bf56;
 }
 
 }
+h2 span{
+  position: relative;
+   &:hover{
+   &::after{
+    transform:scaleX(1);
+  }
+}
+
+&::after{
+  content:"";
+  background-color:$cd-couleur_txt_note;
+  transition:transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
+}
+
+}

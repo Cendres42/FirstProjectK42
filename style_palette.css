@@ -1,6 +1,6 @@
 .menu-palette {
   background-color: #fdfffd;
-  text-align: center;
+  text-align: left;
   margin-left: 35rem;
   margin-right: 35rem;
   margin-top: 4rem;
@@ -29,6 +29,7 @@
   }
 }
 .menu-palette h2 {
+  text-align: center;
   font-size: 3.5rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
@@ -99,6 +100,25 @@
     margin-right: 4rem;
     margin-left: 4rem;
   }
+}
+
+h2 span {
+  position: relative;
+}
+h2 span:hover::after {
+  transform: scaleX(1);
+}
+h2 span::after {
+  content: "";
+  background-color: #72bf56;
+  transition: transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
 }
 
 /*# sourceMappingURL=style_palette.css.map */
