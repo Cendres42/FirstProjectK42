@@ -54,26 +54,71 @@
     font-size: 3rem;
   }
 }
-.menu-chic .entrees {
-  color: #c67412;
-}
-.menu-chic .entrees img {
+.menu-chic .menu--orang img {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-.menu-chic .plats {
-  color: #a56799;
+.menu-chic .menu--orang h2 span {
+  position: relative;
 }
-.menu-chic .plats img {
+.menu-chic .menu--orang h2 span:hover::after {
+  transform: scaleX(1);
+}
+.menu-chic .menu--orang h2 span::after {
+  content: "";
+  background-color: #c67412;
+  transition: transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
+}
+.menu-chic .menu--viole img {
   margin-left: 5.3rem;
   margin-right: 5.3rem;
 }
-.menu-chic .desserts {
-  color: #6e4ccc;
+.menu-chic .menu--viole h2 span {
+  position: relative;
 }
-.menu-chic .desserts img {
+.menu-chic .menu--viole h2 span:hover::after {
+  transform: scaleX(1);
+}
+.menu-chic .menu--viole h2 span::after {
+  content: "";
+  background-color: #a56799;
+  transition: transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
+}
+.menu-chic .menu--bleute img {
   margin-left: 4rem;
   margin-right: 4rem;
+}
+.menu-chic .menu--bleute h2 span {
+  position: relative;
+}
+.menu-chic .menu--bleute h2 span:hover::after {
+  transform: scaleX(1);
+}
+.menu-chic .menu--bleute h2 span::after {
+  content: "";
+  background-color: #6e4ccc;
+  transition: transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
 }
 .menu-chic .nom-prix {
   display: flex;
@@ -112,31 +157,20 @@
     width: 7rem;
   }
 }
-
 @media (max-width: 801px) {
-  .entrees img, .plats img, .desserts img {
+  .menu-chic .menu--orang img, .menu-chic .menu--viole img, .menu-chic .menu--bleute img {
     margin-right: 0;
     margin-left: 0;
   }
 }
-
-h2 span {
-  position: relative;
+.menu-chic .menu--orang {
+  color: #c67412;
 }
-h2 span:hover::after {
-  transform: scaleX(1);
+.menu-chic .menu--viole {
+  color: #a56799;
 }
-h2 span::after {
-  content: "";
-  background-color: #c67412;
-  transition: transform 2s;
-  transform-origin: 0 0;
-  transform: scaleX(0);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0.4rem;
+.menu-chic .menu--bleute {
+  color: #6e4ccc;
 }
 
 /*# sourceMappingURL=style_chic.css.map */

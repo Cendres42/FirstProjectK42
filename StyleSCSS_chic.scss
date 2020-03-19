@@ -1,14 +1,14 @@
 ﻿
 $cd-vert:#579c87;
 $cd-jaune:#fdcb46;
-$cd-couleur_note:#fcdfdb;
 $cd-couleur_chic:#fff5fe;
-$cd-couleur_delice:#f9f9f9;
-$cd-couleur_palette: #fdfffd;
-$cd-couleur_txt_note: #3c1218;
 $cd-couleur_txt_chic: #c67412;
-$cd-couleur_txt_delice: #102cf8;
-$cd-couleur_txt_palette:#72bf56;
+
+$colours: (
+orang:#c67412 ,
+viole:#a56799 ,
+bleute:#6e4ccc);
+
 
 .menu-chic {
     background-color: $cd-couleur_chic;
@@ -60,36 +60,94 @@ $cd-couleur_txt_palette:#72bf56;
             }
     }
 
-    & .entrees {
-        color: $cd-couleur_txt_chic;
-        & img {
+    & .menu--orang {
+          & img {
             margin-left: 2rem;
             margin-right: 2rem;
               }
+              &  h2 span{
+                  position: relative;
+                   &:hover{
+                   &::after{
+                    transform:scaleX(1);
+                  }
+                }
+
+                &::after{
+                  content:"";
+                  background-color:$cd-couleur_txt_chic ;
+                  transition:transform 2s;
+                  transform-origin: 0 0;
+                  transform: scaleX(0);
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  height: 0.4rem;
+                }
+              }
+
     }
 
 
-& .plats {
-    color: #a56799;
+& .menu--viole {
 
     & img {
         margin-left: 5.3rem;
         margin-right: 5.3rem
-
     }
+  &  h2 span{
+      position: relative;
+       &:hover{
+       &::after{
+        transform:scaleX(1);
+      }
+    }
+
+    &::after{
+      content:"";
+      background-color:#a56799 ;
+      transition:transform 2s;
+      transform-origin: 0 0;
+      transform: scaleX(0);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.4rem;
+    }
+
+}
 }
 
-
-    & .desserts {
-        color: #6e4ccc;
-
+    & .menu--bleute {
         & img {
             margin-left: 4rem;
             margin-right: 4rem
                       }
+                    &  h2 span{
+                        position: relative;
+                         &:hover{
+                         &::after{
+                          transform:scaleX(1);
+                        }
+                      }
+
+                      &::after{
+                        content:"";
+                        background-color: #6e4ccc;
+                        transition:transform 2s;
+                        transform-origin: 0 0;
+                        transform: scaleX(0);
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 0.4rem;
+                      }
 
         }
-
+}
 
     & .nom-prix {
         display: flex;
@@ -123,31 +181,17 @@ $cd-couleur_txt_palette:#72bf56;
                         width:7rem;
                     }
     }
-  }
-    .entrees img, .plats img, .desserts img{
+
+    .menu--orang img, .menu--viole img, .menu--bleute img{
       @media (max-width: 801px) {
                 margin-right: 0;
                 margin-left: 0;
         }
     }
-    h2 span{
-      position: relative;
-       &:hover{
-       &::after{
-        transform:scaleX(1);
-      }
-    }
+@each $colour, $hex in $colours {
+.menu--#{$colour} {
+color: $hex;
+}
+}
 
-    &::after{
-      content:"";
-      background-color:$cd-couleur_txt_chic;
-      transition:transform 2s;
-      transform-origin: 0 0;
-      transform: scaleX(0);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 0.4rem;
-    }
 }

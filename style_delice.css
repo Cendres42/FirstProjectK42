@@ -57,9 +57,63 @@
     font-size: 4rem;
   }
 }
+.menu-delice .entrees h2 span {
+  position: relative;
+}
+.menu-delice .entrees h2 span:hover::after {
+  transform: scaleX(1);
+}
+.menu-delice .entrees h2 span::after {
+  content: "";
+  background-color: #102cf8;
+  transition: transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
+}
 .menu-delice .entrees img {
   padding-right: 5rem;
   padding-left: 5rem;
+}
+.menu-delice .plats h2 span {
+  position: relative;
+}
+.menu-delice .plats h2 span:hover::after {
+  transform: scaleX(1);
+}
+.menu-delice .plats h2 span::after {
+  content: "";
+  background-color: #0670f3;
+  transition: transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
+}
+.menu-delice .desserts h2 span {
+  position: relative;
+}
+.menu-delice .desserts h2 span:hover::after {
+  transform: scaleX(1);
+}
+.menu-delice .desserts h2 span::after {
+  content: "";
+  background-color: #229df9;
+  transition: transform 2s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
 }
 .menu-delice .plats img, .menu-delice .desserts img {
   padding-right: 6rem;

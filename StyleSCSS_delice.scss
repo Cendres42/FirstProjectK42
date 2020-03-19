@@ -55,6 +55,27 @@ $cd-couleur_txt_delice: #102cf8;
 }
 
 & .entrees {
+  &  h2 span{
+      position: relative;
+       &:hover{
+       &::after{
+        transform:scaleX(1);
+      }
+    }
+
+    &::after{
+      content:"";
+      background-color:$cd-couleur_txt_delice ;
+      transition:transform 2s;
+      transform-origin: 0 0;
+      transform: scaleX(0);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.4rem;
+    }
+  }
     & img
 
 {
@@ -64,7 +85,53 @@ $cd-couleur_txt_delice: #102cf8;
 
 }
 
-& .plats, & .desserts {
+& .plats{
+  &  h2 span{
+      position: relative;
+       &:hover{
+       &::after{
+        transform:scaleX(1);
+      }
+    }
+
+    &::after{
+      content:"";
+      background-color: #0670f3;
+      transition:transform 2s;
+      transform-origin: 0 0;
+      transform: scaleX(0);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.4rem;
+    }
+  }
+}
+& .desserts{
+  &  h2 span{
+      position: relative;
+       &:hover{
+       &::after{
+        transform:scaleX(1);
+      }
+    }
+
+    &::after{
+      content:"";
+      background-color:#229df9 ;
+      transition:transform 2s;
+      transform-origin: 0 0;
+      transform: scaleX(0);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.4rem;
+    }
+  }
+}
+  & .plats, & .desserts {
     & img
 
 {
