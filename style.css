@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes points {
   0% {
     transform: translate(0, 0);
@@ -26,6 +27,16 @@
     transform: rotate(0deg);
   }
 }
+/*WIGGLE V2, mois convaincant, avec cubic-bezier(.9,.1,.05,.1) et durée 200ms
+$shake-angle: 5deg;
+@keyframes wiggle {
+    25% {
+          transform: rotate($shake-angle);
+    }
+    75% {
+        transform: rotate(-$shake-angle);
+    }
+}*/
 .logo {
   padding-top: 5rem;
   padding-bottom: 3rem;
@@ -189,6 +200,7 @@ body {
 }
 #basdepage #Mentions, #basdepage #Contact, #basdepage a #Mentions, #basdepage a #Contact {
   animation: wiggle 1s infinite;
+  /*nom animation durée (délai) type courbe nbe de répet*/
 }
 
 .futur {
@@ -206,14 +218,17 @@ body {
   text-align: center;
   display: flex;
 }
-.futur__img1 {
-  animation: points 2s 0.5s ease-in-out infinite;
+.futur img {
+  animation: points 2s ease-in-out infinite;
 }
-.futur__img2 {
-  animation: points 2s 1s ease-in-out infinite;
+.futur__img1 img {
+  animation-delay: 0.5s;
 }
-.futur__img3 {
-  animation: points 2s 1.5s ease-in-out infinite;
+.futur__img2 img {
+  animation-delay: 1s;
+}
+.futur__img3 img {
+  animation-delay: 1.5s;
 }
 
 #prochainement {

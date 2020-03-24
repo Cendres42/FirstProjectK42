@@ -32,7 +32,7 @@ $cd-couleur_txt_palette: #72bf56;
     transform: translate(0,-10px);
 }
  100% {
-        transform: translate(0,0);
+    transform: translate(0,0);
     }
  }
  @keyframes wiggle {
@@ -56,6 +56,16 @@ $cd-couleur_txt_palette: #72bf56;
             transform: rotate(0deg);
         }
     }
+/*WIGGLE V2, mois convaincant, avec cubic-bezier(.9,.1,.05,.1) et durée 200ms
+$shake-angle: 5deg;
+@keyframes wiggle {
+    25% {
+          transform: rotate($shake-angle);
+    }
+    75% {
+        transform: rotate(-$shake-angle);
+    }
+}*/
 
 
 
@@ -216,6 +226,7 @@ body{
 
     & #Mentions, #Contact {
         animation: wiggle 1s infinite;
+        /*nom animation durée (délai) type courbe nbe de répet*/
     }
 }
 
@@ -234,18 +245,14 @@ body{
     padding-bottom: 1rem;
     text-align: center;
     display:flex;
-
-    &__img1 {
-        animation: points 2s 0.5s ease-in-out infinite;
-    }
-
-    &__img2 {
-        animation: points 2s 1s ease-in-out infinite;
-    }
-
-    &__img3 {
-        animation: points 2s 1.5s ease-in-out infinite;
-    }
+    & img{
+    animation: points 2s ease-in-out infinite;
+  }
+@for $i from 1 through 3{
+  &__img#{$i} img{
+  animation-delay:0.5s*$i;
+}
+}
 }
 #prochainement {
     width: 100%;
