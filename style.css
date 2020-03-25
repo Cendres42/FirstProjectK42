@@ -37,11 +37,6 @@ $shake-angle: 5deg;
         transform: rotate(-$shake-angle);
     }
 }*/
-.logo {
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-}
-
 html {
   font-size: 45%;
   height: 100%;
@@ -57,6 +52,23 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+}
+
+header {
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+  min-width: 100%;
+}
+header img {
+  height: 12rem;
+  width: 50rem;
+  margin-bottom: 2.5rem;
+}
+
+.logo {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
 .menus {
@@ -104,7 +116,6 @@ body {
   padding-bottom: 15rem;
   background-color: #fdfffd;
   color: #72bf56;
-  transition: transform 4s, ease-in-out;
 }
 .menus__palette:hover {
   opacity: 0.5;
@@ -189,18 +200,11 @@ body {
   padding-bottom: 15rem;
 }
 
-#basdepage, #basdepage a {
+#prochainement {
+  width: 100%;
   display: flex;
-  background-color: #579c87;
-  color: #fdcb46;
-  font-size: 2.5rem;
-  justify-content: space-between;
-  padding: 1rem;
-  text-decoration: none;
-}
-#basdepage #Mentions, #basdepage #Contact, #basdepage a #Mentions, #basdepage a #Contact {
-  animation: wiggle 1s infinite;
-  /*nom animation durée (délai) type courbe nbe de répet*/
+  justify-content: center;
+  margin-bottom: 10rem;
 }
 
 .futur {
@@ -231,11 +235,40 @@ body {
   animation-delay: 1.5s;
 }
 
-#prochainement {
+footer {
+  position: fixed;
+  bottom: 0px;
   width: 100%;
+}
+
+#basdepage, #basdepage a {
   display: flex;
-  justify-content: center;
-  margin-bottom: 10rem;
+  background-color: #579c87;
+  color: #fdcb46;
+  font-size: 2.5rem;
+  justify-content: space-between;
+  padding: 1rem;
+  text-decoration: none;
+}
+#basdepage #Mentions, #basdepage #Contact, #basdepage a #Mentions, #basdepage a #Contact {
+  animation: wiggle 1s infinite;
+  /*nom animation durée (délai) type courbe nbe de répet*/
+}
+
+#infos-legales {
+  font-size: 2rem;
+  margin-bottom: 15rem;
+}
+#infos-legales p {
+  margin-left: 6rem;
+}
+#infos-legales li {
+  list-style-type: none;
+}
+#infos-legales h2 {
+  color: #579c87;
+  font-size: 3rem;
+  margin-left: 3rem;
 }
 
 h1 {
@@ -252,22 +285,9 @@ h1 {
   }
 }
 
-header {
-  background-color: #579c87;
-  color: #fdcb46;
-  text-align: center;
-  min-width: 100%;
-}
-
 .menu-grand {
   text-align: center;
   margin: 6rem;
-}
-
-footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
 }
 
 @font-face {
@@ -297,27 +317,6 @@ footer {
   src: url("texgyrepagella-regular-webfont.eot?#iefix") format("embedded-opentype"), url("texgyrepagella-regular-webfont.woff2") format("woff2"), url("texgyrepagella-regular-webfont.woff") format("woff"), url("texgyrepagella-regular-webfont.ttf") format("truetype"), url("texgyrepagella-regular-webfont.svg#tex_gyre_pagellaregular") format("svg");
   font-weight: normal;
   font-style: normal;
-}
-header img {
-  height: 12rem;
-  width: 50rem;
-  margin-bottom: 2.5rem;
-}
-
-#infos-legales {
-  font-size: 2rem;
-  margin-bottom: 15rem;
-}
-#infos-legales p {
-  margin-left: 6rem;
-}
-#infos-legales li {
-  list-style-type: none;
-}
-#infos-legales h2 {
-  color: #579c87;
-  font-size: 3rem;
-  margin-left: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

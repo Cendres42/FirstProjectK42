@@ -1,5 +1,3 @@
-
-
 $cd-vert:#579c87;
 $cd-jaune:#fdcb46;
 $cd-couleur_note:#fcdfdb;
@@ -20,8 +18,6 @@ $cd-couleur_txt_palette: #72bf56;
         opacity: 0.5;
         transform:scale(1.3);
         }
-
-
 }
 @keyframes points{
 0% {
@@ -67,12 +63,6 @@ $shake-angle: 5deg;
     }
 }*/
 
-
-
-.logo {
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-}
 html {
     font-size: 45%;
     height: 100%;
@@ -87,22 +77,35 @@ body{
     padding:0;
     min-height:100%;
 }
+header
+{
+   background-color: $cd-vert;
+   color: $cd-jaune;
+   text-align:center;
+   min-width:100%;
+
+ & img{
+     height:12rem;
+     width:50rem;
+     margin-bottom:2.5rem;
+ }
+}
+.logo {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
 .menus {
     display: flex;
     justify-content: center;
     text-align: center;
 
-
     @media (max-width: 800px) {
         flex-direction: column;
-
     }
 
     & a {
         font-size: 5rem;
     }
-
-
 
     &__chic {
         @include cadres-menus;
@@ -129,7 +132,7 @@ body{
         @include cadres-menus;
         background-color: $cd-couleur_palette;
         color: $cd-couleur_txt_palette;
-        transition: transform 4s, ease-in-out;
+
 
         & h1 {
             font-family: 'Kaushan Script', 'tex_gyre_pagellabold_italic','Comic Sans MS';
@@ -152,7 +155,6 @@ body{
         background-color: $cd-couleur_delice;
         color: $cd-couleur_txt_delice;
 
-
         & h1 {
             font-family: "Dancing script",'Edwardian Script ITC', Georgia,;
             background: -webkit-gradient(linear, left center, right center, from($cd-couleur_txt_delice), to(#0dbbd1));
@@ -173,14 +175,11 @@ body{
         @include cadres-menus;
         color: $cd-couleur_txt_note;
 
-
-
         & h1 {
             font-family: 'Devonshire','Dancing Script','calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
             margin-top: 0;
             font-size: 4rem;
             color: $cd-couleur_txt_note;
-
         }
 
         & a {
@@ -210,27 +209,17 @@ body{
         border-radius: 0.5rem;
         padding-bottom:15rem;
       }
-
-
-
 }
 
-#basdepage, #basdepage a {
+#prochainement {
+    width: 100%;
     display: flex;
-    background-color: $cd-vert;
-    color: $cd-jaune;
-    font-size: 2.5rem;
-    justify-content: space-between;
-    padding: 1rem;
-    text-decoration: none;
+    justify-content: center;
+    margin-bottom: 10rem;
 
-    & #Mentions, #Contact {
-        animation: wiggle 1s infinite;
-        /*nom animation durée (délai) type courbe nbe de répet*/
-    }
 }
 
-
+$anim-delai:0.5s;
 .futur {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -250,18 +239,54 @@ body{
   }
 @for $i from 1 through 3{
   &__img#{$i} img{
-  animation-delay:0.5s*$i;
+  animation-delay:$anim-delai*$i;
 }
 }
 }
-#prochainement {
-    width: 100%;
+
+footer{
+
+position: fixed;
+bottom: 0px;
+width: 100%;
+}
+
+#basdepage, #basdepage a {
     display: flex;
-    justify-content: center;
-    margin-bottom: 10rem;
+    background-color: $cd-vert;
+    color: $cd-jaune;
+    font-size: 2.5rem;
+    justify-content: space-between;
+    padding: 1rem;
+    text-decoration: none;
 
+    & #Mentions, #Contact {
+        animation: wiggle 1s infinite;
+        /*nom animation durée (délai) type courbe nbe de répet*/
+    }
+}
+
+#infos-legales {
+    font-size: 2rem;
+    margin-bottom:15rem;
+
+    & p {
+        margin-left: 6rem;
+    }
+
+    & li {
+        list-style-type: none;
+    }
+
+    & h2 {
+        color: $cd-vert;
+        font-size: 3rem;
+        margin-left:3rem;
+    }
 
 }
+
+
 h1 {
     font-size: 5rem;
     text-align: center;
@@ -271,27 +296,14 @@ h1 {
     color:#302f2f;
     @media (max-width: 480px) {
           font-size: 4rem;
-
     }
 }
 
- header
- {
-    background-color: $cd-vert;
-    color: $cd-jaune;
-    text-align:center;
-    min-width:100%;
-  }
- .menu-grand{
+  .menu-grand{
      text-align:center;
      margin:6rem;
  }
-footer{
 
-position: fixed;
-bottom: 0px;
-width: 100%;
-}
 
 @font-face {
     font-family: 'calligraffitiregular';
@@ -321,29 +333,4 @@ width: 100%;
     src: url('texgyrepagella-regular-webfont.eot?#iefix') format('embedded-opentype'), url('texgyrepagella-regular-webfont.woff2') format('woff2'), url('texgyrepagella-regular-webfont.woff') format('woff'), url('texgyrepagella-regular-webfont.ttf') format('truetype'), url('texgyrepagella-regular-webfont.svg#tex_gyre_pagellaregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-header img{
-    height:12rem;
-    width:50rem;
-    margin-bottom:2.5rem;
-}
-
-#infos-legales {
-    font-size: 2rem;
-    margin-bottom:15rem;
-
-    & p {
-        margin-left: 6rem;
-    }
-
-    & li {
-        list-style-type: none;
-    }
-
-    & h2 {
-        color: $cd-vert;
-        font-size: 3rem;
-        margin-left:3rem;
-    }
-
 }

@@ -11,6 +11,11 @@ bleute:#6e4ccc);
 
 
 .menu-chic {
+  @each $colour, $hex in $colours {
+  .menu--#{$colour} {
+            color: $hex;
+                    }
+                                  }
     background-color: $cd-couleur_chic;
     text-align: left;
     margin-left: 35rem;
@@ -21,11 +26,12 @@ bleute:#6e4ccc);
     @media (max-width: 1280px) {
         margin-right: 10rem;
         margin-left: 10rem;
-        }
+                                }
         @media (max-width: 480px) {
             margin-right: 0;
             margin-left: 0;
-            }
+                                  }
+
     & h1 {
         font-size: 8rem;
         background: -webkit-gradient(linear, left top, right bottom, from(#e38913), to(#8f5bfe));
@@ -35,11 +41,11 @@ bleute:#6e4ccc);
         padding-top: 10rem;
         padding-bottom: 6rem;
         font-family: Katibeh, 'tex_gyre_pagellabold', Georgia, Arial, Helvetica, sans-serif,;
+
         @media(max-width:801){
           font-size:6rem;
-        }
+                            }
     }
-
 
     & h2 {
         font-size: 3.2rem;
@@ -49,29 +55,30 @@ bleute:#6e4ccc);
 
         @media (max-width: 1280px) {
             font-size: 2.5rem;
-        }
+                                  }
     }
 
     & p {
         font-size: 2.2rem;
+
         @media (max-width: 480px) {
             margin: 2rem;
             font-size: 3rem;
-            }
-    }
+                                  }
+        }
 
     & .menu--orang {
           & img {
             margin-left: 2rem;
             margin-right: 2rem;
-              }
+                }
               &  h2 span{
                   position: relative;
                    &:hover{
                    &::after{
                     transform:scaleX(1);
-                  }
-                }
+                           }
+                       }
 
                 &::after{
                   content:"";
@@ -84,11 +91,9 @@ bleute:#6e4ccc);
                   left: 0;
                   right: 0;
                   height: 0.4rem;
-                }
-              }
-
-    }
-
+                       }
+                         }
+                 }
 
 & .menu--viole {
 
@@ -116,10 +121,8 @@ bleute:#6e4ccc);
       right: 0;
       height: 0.4rem;
     }
-
 }
 }
-
     & .menu--bleute {
         & img {
             margin-left: 4rem;
@@ -145,7 +148,6 @@ bleute:#6e4ccc);
                         right: 0;
                         height: 0.4rem;
                       }
-
         }
 }
 
@@ -154,6 +156,7 @@ bleute:#6e4ccc);
         justify-content: space-between;
         margin-left: 20rem;
         margin-right: 20rem;
+
         @media (max-width: 1280px) {
             margin-right: 5rem;
             margin-left: 5rem;
@@ -172,13 +175,14 @@ bleute:#6e4ccc);
     & img {
         height: 2rem;
         width: 25rem;
+
         @media (max-width: 801px) {
                   height:1rem;
                   width:15rem;
               }
-              @media (max-width: 480px) {
-                        height:0.5rem;
-                        width:7rem;
+        @media (max-width: 480px) {
+                  height:0.5rem;
+                  width:7rem;
                     }
     }
 
@@ -188,10 +192,4 @@ bleute:#6e4ccc);
                 margin-left: 0;
         }
     }
-@each $colour, $hex in $colours {
-.menu--#{$colour} {
-color: $hex;
-}
-}
-
 }

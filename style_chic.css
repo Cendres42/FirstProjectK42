@@ -7,6 +7,15 @@
   margin-bottom: 20rem;
   padding-bottom: 15rem;
 }
+.menu-chic .menu--orang {
+  color: #c67412;
+}
+.menu-chic .menu--viole {
+  color: #a56799;
+}
+.menu-chic .menu--bleute {
+  color: #6e4ccc;
+}
 @media (max-width: 1280px) {
   .menu-chic {
     margin-right: 10rem;
@@ -162,15 +171,6 @@
     margin-right: 0;
     margin-left: 0;
   }
-}
-.menu-chic .menu--orang {
-  color: #c67412;
-}
-.menu-chic .menu--viole {
-  color: #a56799;
-}
-.menu-chic .menu--bleute {
-  color: #6e4ccc;
 }
 
 /*# sourceMappingURL=style_chic.css.map */
