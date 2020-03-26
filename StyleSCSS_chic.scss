@@ -32,7 +32,7 @@ bleute:#6e4ccc);
             margin-left: 0;
                                   }
 
-    & h1 {
+    & h2 {
         font-size: 8rem;
         background: -webkit-gradient(linear, left top, right bottom, from(#e38913), to(#8f5bfe));
         -webkit-background-clip: text;
@@ -47,7 +47,7 @@ bleute:#6e4ccc);
                             }
     }
 
-    & h2 {
+    & h3 {
         font-size: 3.2rem;
         margin-bottom: 5rem;
         margin-top: 5rem;
@@ -72,7 +72,7 @@ bleute:#6e4ccc);
             margin-left: 2rem;
             margin-right: 2rem;
                 }
-              &  h2 span{
+              &  h3 span{
                   position: relative;
                    &:hover{
                    &::after{
@@ -101,7 +101,7 @@ bleute:#6e4ccc);
         margin-left: 5.3rem;
         margin-right: 5.3rem
     }
-  &  h2 span{
+  &  h3 span{
       position: relative;
        &:hover{
        &::after{
@@ -128,7 +128,7 @@ bleute:#6e4ccc);
             margin-left: 4rem;
             margin-right: 4rem
                       }
-                    &  h2 span{
+                    &  h3 span{
                         position: relative;
                          &:hover{
                          &::after{
@@ -180,7 +180,7 @@ bleute:#6e4ccc);
                   height:1rem;
                   width:15rem;
               }
-        @media (max-width: 480px) {
+        @media (max-width: 550px) {
                   height:0.5rem;
                   width:7rem;
                     }

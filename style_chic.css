@@ -28,7 +28,7 @@
     margin-left: 0;
   }
 }
-.menu-chic h1 {
+.menu-chic h2 {
   font-size: 8rem;
   background: -webkit-gradient(linear, left top, right bottom, from(#e38913), to(#8f5bfe));
   -webkit-background-clip: text;
@@ -39,18 +39,18 @@
   font-family: Katibeh, "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
 }
 @media (max-width: 801) {
-  .menu-chic h1 {
+  .menu-chic h2 {
     font-size: 6rem;
   }
 }
-.menu-chic h2 {
+.menu-chic h3 {
   font-size: 3.2rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
   text-align: center;
 }
 @media (max-width: 1280px) {
-  .menu-chic h2 {
+  .menu-chic h3 {
     font-size: 2.5rem;
   }
 }
@@ -67,13 +67,13 @@
   margin-left: 2rem;
   margin-right: 2rem;
 }
-.menu-chic .menu--orang h2 span {
+.menu-chic .menu--orang h3 span {
   position: relative;
 }
-.menu-chic .menu--orang h2 span:hover::after {
+.menu-chic .menu--orang h3 span:hover::after {
   transform: scaleX(1);
 }
-.menu-chic .menu--orang h2 span::after {
+.menu-chic .menu--orang h3 span::after {
   content: "";
   background-color: #c67412;
   transition: transform 2s;
@@ -89,13 +89,13 @@
   margin-left: 5.3rem;
   margin-right: 5.3rem;
 }
-.menu-chic .menu--viole h2 span {
+.menu-chic .menu--viole h3 span {
   position: relative;
 }
-.menu-chic .menu--viole h2 span:hover::after {
+.menu-chic .menu--viole h3 span:hover::after {
   transform: scaleX(1);
 }
-.menu-chic .menu--viole h2 span::after {
+.menu-chic .menu--viole h3 span::after {
   content: "";
   background-color: #a56799;
   transition: transform 2s;
@@ -111,13 +111,13 @@
   margin-left: 4rem;
   margin-right: 4rem;
 }
-.menu-chic .menu--bleute h2 span {
+.menu-chic .menu--bleute h3 span {
   position: relative;
 }
-.menu-chic .menu--bleute h2 span:hover::after {
+.menu-chic .menu--bleute h3 span:hover::after {
   transform: scaleX(1);
 }
-.menu-chic .menu--bleute h2 span::after {
+.menu-chic .menu--bleute h3 span::after {
   content: "";
   background-color: #6e4ccc;
   transition: transform 2s;
@@ -160,7 +160,7 @@
     width: 15rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .menu-chic img {
     height: 0.5rem;
     width: 7rem;

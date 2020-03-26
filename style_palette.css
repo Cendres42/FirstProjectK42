@@ -13,7 +13,7 @@
     margin-left: 0;
   }
 }
-.menu-palette h1 {
+.menu-palette h2 {
   font-size: 7rem;
   font-family: "Kaushan Script", "tex_gyre_pagellabold_italic", "Comic Sans MS";
   font-style: italic;
@@ -24,11 +24,11 @@
   padding-bottom: 6rem;
 }
 @media (max-width: 801px) {
-  .menu-palette h1 {
+  .menu-palette h2 {
     font-size: 5rem;
   }
 }
-.menu-palette h2 {
+.menu-palette h3 {
   text-align: center;
   font-size: 3.5rem;
   margin-bottom: 5rem;
@@ -37,7 +37,7 @@
   font-weight: normal;
 }
 @media (max-width: 801px) {
-  .menu-palette h2 {
+  .menu-palette h3 {
     font-size: 3rem;
   }
 }
@@ -62,6 +62,12 @@
     margin-right: 9rem;
   }
 }
+@media (max-width: 480px) {
+  .menu-palette .nom-prix {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 .menu-palette .entrees img {
   height: 1rem;
   margin-left: 9rem;
@@ -73,6 +79,11 @@
     height: 0.5rem;
     margin-right: 4rem;
     margin-left: 4rem;
+  }
+}
+@media (max-width: 240px) {
+  .menu-palette .entrees img {
+    display: none;
   }
 }
 .menu-palette .plats img {
@@ -88,6 +99,11 @@
     margin-left: 4rem;
   }
 }
+@media (max-width: 240px) {
+  .menu-palette .plats img {
+    display: none;
+  }
+}
 .menu-palette .desserts img {
   height: 1rem;
   margin-left: 5rem;
@@ -101,14 +117,19 @@
     margin-left: 4rem;
   }
 }
+@media (max-width: 240px) {
+  .menu-palette .desserts img {
+    display: none;
+  }
+}
 
-h2 span {
+h3 span {
   position: relative;
 }
-h2 span:hover::after {
+h3 span:hover::after {
   transform: scaleX(1);
 }
-h2 span::after {
+h3 span::after {
   content: "";
   background-color: #72bf56;
   transition: transform 2s;

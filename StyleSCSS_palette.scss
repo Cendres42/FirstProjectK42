@@ -17,7 +17,7 @@ $cd-couleur_palette: #fdfffd;
         margin-left: 0;
     }
 
-    & h1 {
+    & h2 {
         font-size: 7rem;
         font-family: 'Kaushan Script', 'tex_gyre_pagellabold_italic','Comic Sans MS';
         font-style: italic;
@@ -32,7 +32,7 @@ $cd-couleur_palette: #fdfffd;
         }
     }
 
-    & h2 {
+    & h3 {
         text-align:center;
         font-size: 3.5rem;
         margin-bottom: 5rem;
@@ -64,6 +64,10 @@ $cd-couleur_palette: #fdfffd;
             margin-left: 9rem;
             margin-right: 9rem;
         }
+        @media (max-width: 480px) {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
           }
 
     .entrees img {
@@ -76,6 +80,9 @@ $cd-couleur_palette: #fdfffd;
             height: 0.5rem;
             margin-right: 4rem;
             margin-left: 4rem;
+        }
+        @media(max-width:240px){
+          display:none;
         }
 
     }
@@ -91,6 +98,9 @@ $cd-couleur_palette: #fdfffd;
             margin-right: 4rem;
             margin-left: 4rem;
         }
+        @media(max-width:240px){
+          display:none;
+        }
 
     }
 
@@ -105,10 +115,13 @@ $cd-couleur_palette: #fdfffd;
             margin-right: 4rem;
             margin-left: 4rem;
         }
+        @media(max-width:240px){
+          display:none;
+        }
     }
 
 }
-h2 span{
+h3 span{
   position: relative;
    &:hover{
    &::after{

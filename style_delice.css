@@ -15,11 +15,11 @@
 }
 @media (max-width: 480px) {
   .menu-delice {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
-.menu-delice h1 {
+.menu-delice h2 {
   font-family: "Dancing script", "Edwardian Script ITC", Georgia;
   font-style: italic;
   background: -webkit-gradient(linear, left center, right center, from(#102cf8), to(#0dbbd1));
@@ -31,16 +31,16 @@
   font-size: 8rem;
 }
 @media (max-width: 801) {
-  .menu-delice h1 {
+  .menu-delice h2 {
     font-size: 6rem;
   }
 }
-@media (max-width: 480px) {
-  .menu-delice h1 {
+@media (max-width: 600px) {
+  .menu-delice h2 {
     font-size: 5rem;
   }
 }
-.menu-delice h2 {
+.menu-delice h3 {
   font-size: 4rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
@@ -48,22 +48,17 @@
   font-weight: normal;
 }
 @media (max-width: 1280px) {
-  .menu-delice h2 {
+  .menu-delice h3 {
     font-size: 2.5rem;
   }
 }
-@media (max-width: 480px) {
-  .menu-delice h2 {
-    font-size: 4rem;
-  }
-}
-.menu-delice .entrees h2 span {
+.menu-delice .entrees h3 span {
   position: relative;
 }
-.menu-delice .entrees h2 span:hover::after {
+.menu-delice .entrees h3 span:hover::after {
   transform: scaleX(1);
 }
-.menu-delice .entrees h2 span::after {
+.menu-delice .entrees h3 span::after {
   content: "";
   background-color: #102cf8;
   transition: transform 2s;
@@ -79,13 +74,13 @@
   padding-right: 5rem;
   padding-left: 5rem;
 }
-.menu-delice .plats h2 span {
+.menu-delice .plats h3 span {
   position: relative;
 }
-.menu-delice .plats h2 span:hover::after {
+.menu-delice .plats h3 span:hover::after {
   transform: scaleX(1);
 }
-.menu-delice .plats h2 span::after {
+.menu-delice .plats h3 span::after {
   content: "";
   background-color: #0670f3;
   transition: transform 2s;
@@ -97,13 +92,13 @@
   right: 0;
   height: 0.4rem;
 }
-.menu-delice .desserts h2 span {
+.menu-delice .desserts h3 span {
   position: relative;
 }
-.menu-delice .desserts h2 span:hover::after {
+.menu-delice .desserts h3 span:hover::after {
   transform: scaleX(1);
 }
-.menu-delice .desserts h2 span::after {
+.menu-delice .desserts h3 span::after {
   content: "";
   background-color: #229df9;
   transition: transform 2s;
@@ -126,8 +121,7 @@
 }
 @media (max-width: 480px) {
   .menu-delice p {
-    margin: 2rem;
-    font-size: 4rem;
+    margin: 1rem;
   }
 }
 .menu-delice .nom-prix {
@@ -149,29 +143,34 @@
 @media (max-width: 801px) {
   .menu-delice img {
     height: 0.9rem;
-    width: 17rem;
+    width: 13rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .menu-delice img {
     height: 0.4rem;
     width: 7rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .menu-delice .entrees img, .menu-delice .plats img, .menu-delice .desserts img {
     padding-right: 2rem;
     padding-left: 2rem;
   }
 }
+@media (max-width: 230px) {
+  .menu-delice .entrees img, .menu-delice .plats img, .menu-delice .desserts img {
+    display: none;
+  }
+}
 
-h2 span {
+h3 span {
   position: relative;
 }
-h2 span:hover::after {
+h3 span:hover::after {
   transform: scaleX(1);
 }
-h2 span::after {
+h3 span::after {
   content: "";
   background-color: #102cf8;
   transition: transform 2s;

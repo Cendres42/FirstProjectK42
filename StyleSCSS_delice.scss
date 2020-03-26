@@ -18,11 +18,11 @@ $cd-couleur_txt_delice: #102cf8;
         margin-left: 10rem;
         }
         @media (max-width: 480px) {
-            margin-right: 0;
-            margin-left: 0;
+            margin-right: 1rem;
+            margin-left: 1rem;
             }
 
-& h1 {
+& h2 {
     font-family: "Dancing script",'Edwardian Script ITC', Georgia,;
     font-style: italic;
     background: -webkit-gradient(linear, left center, right center, from($cd-couleur_txt_delice), to(#0dbbd1));
@@ -35,12 +35,12 @@ $cd-couleur_txt_delice: #102cf8;
     @media(max-width:801){
       font-size:6rem;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
         font-size:5rem;
       }
     }
 
-    & h2 {
+    & h3 {
     font-size: 4rem;
     margin-bottom: 5rem;
     margin-top: 5rem;
@@ -49,13 +49,11 @@ $cd-couleur_txt_delice: #102cf8;
     @media (max-width: 1280px) {
         font-size: 2.5rem;
     }
-    @media (max-width: 480px) {
-        font-size:4rem;
-      }
+
 }
 
 & .entrees {
-  &  h2 span{
+  &  h3 span{
       position: relative;
        &:hover{
        &::after{
@@ -86,7 +84,7 @@ $cd-couleur_txt_delice: #102cf8;
 }
 
 & .plats{
-  &  h2 span{
+  &  h3 span{
       position: relative;
        &:hover{
        &::after{
@@ -109,7 +107,7 @@ $cd-couleur_txt_delice: #102cf8;
   }
 }
 & .desserts{
-  &  h2 span{
+  &  h3 span{
       position: relative;
        &:hover{
        &::after{
@@ -146,9 +144,8 @@ $cd-couleur_txt_delice: #102cf8;
     font-family: Caveat,'tex_gyre_pagellabold', "comic sans MS",Georgia, Arial, Helvetica, sans-serif;
     text-align: left;
     @media (max-width: 480px) {
-        margin: 2rem;
-        font-size: 4rem;
-        }
+        margin: 1rem;
+            }
 }
 
 & .nom-prix {
@@ -169,21 +166,24 @@ $cd-couleur_txt_delice: #102cf8;
 & img {
     @media (max-width: 801px) {
               height:0.9rem;
-              width:17rem;
+              width:13rem;
           }
-          @media (max-width: 480px) {
+          @media (max-width: 520px) {
                     height:0.4rem;
                     width:7rem;
                 }
   }
   .entrees img, .plats img, .desserts img{
-        @media (max-width: 480px) {
+        @media (max-width: 680px) {
               padding-right: 2rem;
               padding-left: 2rem;
                     }
+                    @media (max-width:230px){
+                      display:none;
+                    }
 }
 }
-h2 span{
+h3 span{
   position: relative;
    &:hover{
    &::after{
