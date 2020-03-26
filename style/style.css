@@ -101,7 +101,7 @@ header img {
 }
 @media (max-width: 250px) {
   .menus__chic {
-    width: 30px;
+    width: 30rem;
   }
 }
 .menus__chic:hover {
@@ -131,7 +131,7 @@ header img {
 }
 @media (max-width: 250px) {
   .menus__palette {
-    width: 30px;
+    width: 30rem;
   }
 }
 .menus__palette:hover {
@@ -161,7 +161,7 @@ header img {
 }
 @media (max-width: 250px) {
   .menus__delice {
-    width: 30px;
+    width: 30rem;
   }
 }
 .menus__delice:hover {
@@ -190,7 +190,7 @@ header img {
 }
 @media (max-width: 250px) {
   .menus__note {
-    width: 30px;
+    width: 30rem;
   }
 }
 .menus__note:hover {
@@ -236,7 +236,7 @@ header img {
 }
 @media (max-width: 250px) {
   .menus .cadre {
-    width: 30px;
+    width: 30rem;
   }
 }
 
