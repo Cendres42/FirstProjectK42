@@ -102,6 +102,9 @@ header
     font-family:arial, sans-serif;
     font-weight:bold;
     color:$cd-jaune;
+    @media(max-width:480px){
+      font-size:7rem;
+    }
   }
 }
 .menus {

@@ -77,6 +77,11 @@ header img {
   font-weight: bold;
   color: #fdcb46;
 }
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 7rem;
+  }
+}
 
 .menus {
   display: flex;
