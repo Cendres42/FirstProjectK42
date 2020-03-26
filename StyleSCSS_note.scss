@@ -26,11 +26,12 @@ $cd-couleur_txt_palette: #72bf56;
             }
 
 
-    & h1 {
+    & h2 {
         font-size: 6rem;
         margin-top: 0;
         font-family: 'Devonshire','Dancing Script','calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
         color: $cd-couleur_txt_note;
+        text-align:center;
         @media(max-width:801){
           font-size:6rem;
         }
@@ -40,7 +41,7 @@ $cd-couleur_txt_palette: #72bf56;
         }
 
 
-    & h2 {
+    & h3 {
         font-size: 3.5rem;
         margin-bottom: 5rem;
         margin-top: 5rem;
@@ -48,18 +49,15 @@ $cd-couleur_txt_palette: #72bf56;
         font-family: 'Caveat','calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
         color: $cd-couleur_txt_note;
         @media (max-width: 1280px) {
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
-        @media (max-width: 480px) {
-            font-size:4rem;
-          }
     }
 
     & .entrees {
       & img {
         padding-left: 10rem;
         padding-right: 10rem;
-        @media (max-width: 801px) {
+        @media (max-width: 750px) {
               padding-right: 2rem;
               padding-left: 2rem;
                     }
@@ -70,7 +68,7 @@ $cd-couleur_txt_palette: #72bf56;
       & img {
         padding-left: 9rem;
         padding-right: 9rem;
-        @media (max-width: 801px) {
+        @media (max-width: 750px) {
               padding-right: 2rem;
               padding-left: 2rem;
                     }
@@ -81,7 +79,7 @@ $cd-couleur_txt_palette: #72bf56;
     & img {
         padding-left: 7rem;
         padding-right: 7rem;
-        @media (max-width: 801px) {
+        @media (max-width: 750px) {
               padding-right: 2rem;
               padding-left: 2rem;
                     }
@@ -93,8 +91,8 @@ $cd-couleur_txt_palette: #72bf56;
         color: $cd-couleur_txt_note;
         text-align: left;
         @media (max-width: 480px) {
-            margin: 2rem;
-            font-size: 4rem;
+            margin: 0.5rem;
+            font-size: 3rem;
             }
     }
 
@@ -116,12 +114,15 @@ $cd-couleur_txt_palette: #72bf56;
         }
 
     }
-  & img {
-        @media (max-width: 801px) {
+      & img {
                   height:0.9rem;
                   width:17rem;
-              }
-              @media (max-width: 480px) {
+
+                  @media (max-width: 750px) {
+                            height:0.6rem;
+                            width:10rem;
+                        }
+                    @media (max-width: 480px) {
                         height:0.4rem;
                         width:7rem;
                     }
@@ -129,52 +130,33 @@ $cd-couleur_txt_palette: #72bf56;
 
  #notedouble {
  text-align:center;
- & img {
-    height: 9rem;
-    padding-top: 8rem;
-    @media (max-width: 801px) {
-            height: 6rem;
-            width:6rem;
-                }
-    @media (max-width: 480px) {
-            height: 4rem;
-            width:4rem;
-                            }
-}
+ padding-top: 8rem;
 }
  span{
      font-weight:bold;
  }
+ i {
+     background: -webkit-gradient(linear, left center, right center, from(#b50747), to(#e27e07));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
 #rappelnom {
     margin-top:8rem;
-    & img {
-        height: 4.5rem;
-        float: left;
-        margin-left:42rem;
-        margin-right:1rem;
-        @media (max-width: 1280px) {
-              margin-left:35rem;
-                    }
-        @media (max-width: 801px) {
-                height: 3.5rem;
-                width:3rem;
-                margin-left:12rem;
-                    }
-        @media (max-width: 480px) {
-                height: 3rem;
-                width:2.5rem;
-                  margin-left:4rem;
-                                }
-    }
+    display:flex;
+    justify-content:center;
+    align-items: center;
 
     & p {
         font-family: 'Devonshire','Dancing Script','calligraffitiregular','tex_gyre_pagellaregular', 'Comic Sans MS',serif;
         font-size:3.5rem;
                       }
+                      & i{
+                        margin-right:1rem;
+                      }
 }
 
 }
-h2 span{
+h3 span{
   position: relative;
    &:hover{
    &::after{

@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @keyframes points {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, 15px);
   }
   50% {
-    transform: translate(0, -10px);
+    transform: translate(0, 0);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(0, 15px);
   }
 }
 @keyframes wiggle {
@@ -67,8 +67,15 @@ header img {
 }
 
 .logo {
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+.logo h1 {
+  font-size: 10rem;
+  letter-spacing: -6px;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  color: #fdcb46;
 }
 
 .menus {
@@ -81,7 +88,7 @@ header img {
     flex-direction: column;
   }
 }
-.menus a {
+.menus p {
   font-size: 5rem;
 }
 .menus__chic {
@@ -96,14 +103,14 @@ header img {
   opacity: 0.5;
   transform: scale(1.3);
 }
-.menus__chic h1 {
+.menus__chic h2 {
   font-family: "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
   font-size: 2.8rem;
   background: -webkit-gradient(linear, left top, right bottom, from(#e38913), to(#8f5bfe));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menus__chic a {
+.menus__chic p {
   color: #c67412;
   font-family: "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -121,7 +128,7 @@ header img {
   opacity: 0.5;
   transform: scale(1.3);
 }
-.menus__palette h1 {
+.menus__palette h2 {
   font-family: "Kaushan Script", "tex_gyre_pagellabold_italic", "Comic Sans MS";
   font-style: italic;
   font-size: 3.5rem;
@@ -129,7 +136,7 @@ header img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menus__palette a {
+.menus__palette p {
   color: #72bf56;
   font-family: "Caveat", "tex_gyre_pagellabold_italic", "Comic Sans MS";
   font-size: 8rem;
@@ -146,14 +153,14 @@ header img {
   opacity: 0.5;
   transform: scale(1.3);
 }
-.menus__delice h1 {
+.menus__delice h2 {
   font-family: "Dancing script", "Edwardian Script ITC", Georgia;
   background: -webkit-gradient(linear, left center, right center, from(#102cf8), to(#0dbbd1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4rem;
 }
-.menus__delice a {
+.menus__delice p {
   color: #0887fb;
   font-family: "Caveat", "tex_gyre_pagellabold_italic", "Comic Sans MS";
   font-size: 8rem;
@@ -170,13 +177,13 @@ header img {
   opacity: 0.5;
   transform: scale(1.3);
 }
-.menus__note h1 {
+.menus__note h2 {
   font-family: "Devonshire", "Dancing Script", "calligraffitiregular", "tex_gyre_pagellaregular", "Comic Sans MS", serif;
   margin-top: 0;
   font-size: 4rem;
   color: #3c1218;
 }
-.menus__note a {
+.menus__note p {
   color: #3c1218;
   font-family: "calligraffitiregular", "tex_gyre_pagellaregular", "Comic Sans MS", serif;
   font-style: italic;
@@ -199,6 +206,14 @@ header img {
   border-radius: 0.5rem;
   padding-bottom: 15rem;
 }
+@media (max-width: 800px) {
+  .menus .cadre {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
 
 #prochainement {
   width: 100%;
@@ -219,20 +234,37 @@ header img {
   padding-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  text-align: center;
   display: flex;
 }
-.futur img {
+.futur .ball {
+  display: flex;
+}
+.futur .ball .ball--1 {
   animation: points 2s ease-in-out infinite;
-}
-.futur__img1 img {
   animation-delay: 0.5s;
+  background-color: #fdcb46;
+  margin: 1rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
 }
-.futur__img2 img {
+.futur .ball .ball--2 {
+  animation: points 2s ease-in-out infinite;
   animation-delay: 1s;
+  background-color: #fdcb46;
+  margin: 1rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
 }
-.futur__img3 img {
+.futur .ball .ball--3 {
+  animation: points 2s ease-in-out infinite;
   animation-delay: 1.5s;
+  background-color: #fdcb46;
+  margin: 1rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
 }
 
 footer {
@@ -241,7 +273,7 @@ footer {
   width: 100%;
 }
 
-#basdepage, #basdepage a {
+footer, footer a {
   display: flex;
   background-color: #579c87;
   color: #fdcb46;
@@ -250,8 +282,8 @@ footer {
   padding: 1rem;
   text-decoration: none;
 }
-#basdepage #Mentions, #basdepage #Contact, #basdepage a #Mentions, #basdepage a #Contact {
-  animation: wiggle 1s infinite;
+footer #Mentions:hover, footer #Contact:hover, footer a #Mentions:hover, footer a #Contact:hover {
+  animation: wiggle 0.5s ease-in-out 3;
   /*nom animation durée (délai) type courbe nbe de répet*/
 }
 
@@ -271,7 +303,7 @@ footer {
   margin-left: 3rem;
 }
 
-h1 {
+h2 {
   font-size: 5rem;
   text-align: center;
   margin-top: 5rem;
@@ -280,7 +312,7 @@ h1 {
   color: #302f2f;
 }
 @media (max-width: 480px) {
-  h1 {
+  h2 {
     font-size: 4rem;
   }
 }
