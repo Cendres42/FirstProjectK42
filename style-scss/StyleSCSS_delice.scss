@@ -164,7 +164,7 @@ $cd-couleur_txt_delice: #102cf8;
     text-align: left;
 }
 & img {
-    @media (max-width: 801px) {
+    @media (max-width: 810px) {
               height:0.9rem;
               width:13rem;
           }
@@ -178,7 +178,7 @@ $cd-couleur_txt_delice: #102cf8;
               padding-right: 2rem;
               padding-left: 2rem;
                     }
-                    @media (max-width:230px){
+                    @media (max-width:250px){
                       display:none;
                     }
 }

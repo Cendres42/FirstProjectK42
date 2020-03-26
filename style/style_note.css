@@ -126,6 +126,11 @@
     width: 7rem;
   }
 }
+@media (max-width: 250px) {
+  .menu-note img {
+    display: none;
+  }
+}
 .menu-note #notedouble {
   text-align: center;
   padding-top: 8rem;

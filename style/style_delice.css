@@ -140,7 +140,7 @@
   margin-left: 20rem;
   text-align: left;
 }
-@media (max-width: 801px) {
+@media (max-width: 810px) {
   .menu-delice img {
     height: 0.9rem;
     width: 13rem;
@@ -158,7 +158,7 @@
     padding-left: 2rem;
   }
 }
-@media (max-width: 230px) {
+@media (max-width: 250px) {
   .menu-delice .entrees img, .menu-delice .plats img, .menu-delice .desserts img {
     display: none;
   }

@@ -81,7 +81,7 @@
     margin-left: 4rem;
   }
 }
-@media (max-width: 240px) {
+@media (max-width: 250px) {
   .menu-palette .entrees img {
     display: none;
   }
@@ -99,7 +99,7 @@
     margin-left: 4rem;
   }
 }
-@media (max-width: 240px) {
+@media (max-width: 250px) {
   .menu-palette .plats img {
     display: none;
   }
@@ -117,7 +117,7 @@
     margin-left: 4rem;
   }
 }
-@media (max-width: 240px) {
+@media (max-width: 250px) {
   .menu-palette .desserts img {
     display: none;
   }

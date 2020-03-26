@@ -191,5 +191,8 @@ bleute:#6e4ccc);
                 margin-right: 0;
                 margin-left: 0;
         }
+        @media (max-width: 250px){
+          display:none;
+        }
     }
 }

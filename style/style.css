@@ -99,6 +99,11 @@ header img {
   background-color: #fff5fe;
   color: #c67412;
 }
+@media (max-width: 250px) {
+  .menus__chic {
+    width: 30px;
+  }
+}
 .menus__chic:hover {
   opacity: 0.5;
   transform: scale(1.3);
@@ -123,6 +128,11 @@ header img {
   padding-bottom: 15rem;
   background-color: #fdfffd;
   color: #72bf56;
+}
+@media (max-width: 250px) {
+  .menus__palette {
+    width: 30px;
+  }
 }
 .menus__palette:hover {
   opacity: 0.5;
@@ -149,6 +159,11 @@ header img {
   background-color: #f9f9f9;
   color: #102cf8;
 }
+@media (max-width: 250px) {
+  .menus__delice {
+    width: 30px;
+  }
+}
 .menus__delice:hover {
   opacity: 0.5;
   transform: scale(1.3);
@@ -172,6 +187,11 @@ header img {
   padding-top: 15rem;
   padding-bottom: 15rem;
   color: #3c1218;
+}
+@media (max-width: 250px) {
+  .menus__note {
+    width: 30px;
+  }
 }
 .menus__note:hover {
   opacity: 0.5;
@@ -212,6 +232,11 @@ header img {
     margin-left: auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+}
+@media (max-width: 250px) {
+  .menus .cadre {
+    width: 30px;
   }
 }
 

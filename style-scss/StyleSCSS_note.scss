@@ -61,6 +61,7 @@ $cd-couleur_txt_palette: #72bf56;
               padding-right: 2rem;
               padding-left: 2rem;
                     }
+
     }
   }
 
@@ -125,6 +126,9 @@ $cd-couleur_txt_palette: #72bf56;
                     @media (max-width: 480px) {
                         height:0.4rem;
                         width:7rem;
+                    }
+                    @media (max-width: 250px){
+                      display:none;
                     }
       }
 
