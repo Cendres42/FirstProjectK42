@@ -38,7 +38,7 @@
   padding-bottom: 6rem;
   font-family: Katibeh, "tex_gyre_pagellabold", Georgia, Arial, Helvetica, sans-serif;
 }
-@media (max-width: 801) {
+@media (max-width: 801px) {
   .menu-chic h2 {
     font-size: 6rem;
   }

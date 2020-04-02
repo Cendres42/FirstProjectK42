@@ -317,6 +317,9 @@ footer #Mentions:hover, footer #Contact:hover, footer a #Mentions:hover, footer 
   /*nom animation durée (délai) type courbe nbe de répet*/
 }
 
+  #Contact{
+  padding-right:3rem;
+}
 #infos-legales {
   font-size: 2rem;
   margin-bottom: 15rem;

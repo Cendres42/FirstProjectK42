@@ -30,7 +30,7 @@
   padding-bottom: 3rem;
   font-size: 8rem;
 }
-@media (max-width: 801) {
+@media (max-width: 801px) {
   .menu-delice h2 {
     font-size: 6rem;
   }
